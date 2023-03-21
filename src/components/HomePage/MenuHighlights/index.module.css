@@ -1,0 +1,17 @@
+.box {
+  width: 100%;
+  height: 761px;
+  top: 2231px;
+  background: #111111;
+}
+
+.heading {
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  margin: 0;
+}

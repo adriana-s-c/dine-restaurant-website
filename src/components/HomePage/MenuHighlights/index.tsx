@@ -1,3 +1,9 @@
+import styles from "./index.module.css";
+
 export function MenuHighlights() {
-  return <span>Menu Dishes</span>;
+  return (
+    <div className={styles.box}>
+      <h1 className={styles.heading}>Menu Highlights</h1>
+    </div>
+  );
 }
