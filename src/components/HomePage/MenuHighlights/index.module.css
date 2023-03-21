@@ -1,17 +1,47 @@
 .box {
   width: 100%;
   height: 761px;
+  left: 0px;
   top: 2231px;
   background: #111111;
+  font-family: "League Spartan";
+  color: #ffffff;
+  text-align: left;
 }
 
-.heading {
-  font-family: "League Spartan";
-  font-style: normal;
+.boxContent {
+  display: flex;
+  flex-direction: row;
+}
+
+.descriptionBox {
+  position: absolute;
+  width: 445px;
+  height: 275px;
+  left: 165px;
+  top: 2431px;
+}
+
+.divideIcon {
+  height: 7px;
+  width: 71px;
+  left: 799px;
+  top: 995px;
+  border-radius: 0px;
+  margin-bottom: 55px;
+}
+
+.header {
+  height: 96px;
   font-weight: 700;
   font-size: 48px;
   line-height: 48px;
   letter-spacing: -0.5px;
-  color: #ffffff;
-  margin: 0;
+}
+
+.content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
 }
