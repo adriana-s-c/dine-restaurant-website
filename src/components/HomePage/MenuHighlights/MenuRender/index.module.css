@@ -1,0 +1,62 @@
+.dishesBox {
+  display: flex;
+  flex-direction: row;
+  width: 540px;
+  height: 96px;
+  margin-bottom: 49px;
+}
+
+.dishName {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+  margin: 0px;
+  margin-bottom: 6px;
+  margin-top: 8px;
+}
+.dishDescription {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  width: 350px;
+  height: 52px;
+  margin: 0px;
+}
+
+.dishPicture {
+  width: 128px;
+  height: 96px;
+}
+
+.brownLine {
+  margin-top: 18px;
+  width: 32px;
+  height: 1px;
+  background: #9e7f66;
+  margin-right: 30px;
+}
+
+.divider {
+  position: absolute;
+  width: 540px;
+  height: 1px;
+  left: 735px;
+  top: 2606px;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.15;
+}
+
+.menuBox {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  font-family: "League Spartan";
+  width: 386px;
+  height: 540px;
+  left: 735px;
+  top: 2486px;
+}
