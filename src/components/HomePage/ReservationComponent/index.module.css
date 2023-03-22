@@ -1,0 +1,47 @@
+.box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 240px;
+  background-image: url(../../../images/homepage/ready-bg-desktop@2x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.button {
+  position: absolute;
+  width: 245px;
+  height: 64px;
+  left: 1030px;
+  margin-top: 88px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 16px;
+  letter-spacing: 2.5px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background: transparent;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 16px;
+  letter-spacing: 2.5px;
+}
+
+.header {
+  position: absolute;
+  left: 165px;
+  margin-top: 99px;
+  height: 48px;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  margin-inline: 0px;
+  margin-bottom: 0px;
+}

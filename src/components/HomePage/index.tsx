@@ -3,6 +3,7 @@ import { DescriptionPartTwo } from "./DescriptionPartTwo";
 import { EventType } from "./EventType";
 import { Header } from "./Header";
 import { MenuHighlights } from "./MenuHighlights";
+import { ReservationComponent } from "./ReservationComponent";
 export function HomePage() {
   return (
     <div>
@@ -11,6 +12,7 @@ export function HomePage() {
       <DescriptionPartTwo />
       <MenuHighlights />
       <EventType />
+      <ReservationComponent />
     </div>
   );
 }
