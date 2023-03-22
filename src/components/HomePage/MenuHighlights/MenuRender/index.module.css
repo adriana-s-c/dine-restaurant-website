@@ -3,7 +3,7 @@
   flex-direction: row;
   width: 540px;
   height: 96px;
-  margin-bottom: 49px;
+  margin-bottom: 24px;
 }
 
 .dishName {
@@ -40,6 +40,12 @@
 }
 
 .divider {
+  width: 540px;
+  height: 1px;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.15;
+  margin-bottom: 24px;
 }
 
 .menuBox {

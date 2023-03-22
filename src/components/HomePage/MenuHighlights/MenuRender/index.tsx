@@ -5,6 +5,7 @@ import styles from "./index.module.css";
 
 const dishes = [
   {
+    id: 0,
     dishName: "Seared Salmon Fillet",
     description:
       "Our locally sourced salmon served with a refreshing buckwheat summer salad.",
@@ -12,6 +13,7 @@ const dishes = [
     alt: "Seared Salmon Fillet",
   },
   {
+    id: 1,
     dishName: "Rosemary Filet Mignon",
     description:
       "Our prime beef served to your taste with a delicious choice of seasonal sides.",
@@ -19,6 +21,7 @@ const dishes = [
     alt: "Rosemary Filet Mignon",
   },
   {
+    id: 2,
     dishName: "Summer Fruit Chocolate Mousse",
     description:
       "Creamy mousse combined with summer fruits and dark chocolate shavings.",
@@ -30,23 +33,25 @@ const dishes = [
 export function MenuRender() {
   return (
     <div className={styles.menuBox}>
-      {dishes.map((dish: any, key: number) => {
+      {dishes.map((dish: any) => {
         return (
-          <div className={styles.dishesBox} key={key}>
-            <img
-              src={dish.image}
-              alt={dish.alt}
-              className={styles.dishPicture}
-            />
-            <span className={styles.brownLine} />
-            <div>
-              <p className={styles.dishName}>{dish.dishName}</p>
-              <p className={styles.dishDescription}>{dish.description}</p>
+          <div key={dish.id}>
+            <div className={styles.dishesBox}>
+              <img
+                src={dish.image}
+                alt={dish.alt}
+                className={styles.dishPicture}
+              />
+              <span className={styles.brownLine} />
+              <div>
+                <p className={styles.dishName}>{dish.dishName}</p>
+                <p className={styles.dishDescription}>{dish.description}</p>
+              </div>
             </div>
+            {dishes[2] === dish ? null : <div className={styles.divider} />}
           </div>
         );
       })}
-      <div className={styles.divider} />
     </div>
   );
 }
