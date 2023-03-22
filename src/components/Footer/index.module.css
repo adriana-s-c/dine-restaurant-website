@@ -1,0 +1,10 @@
+.box {
+  position: absolute;
+  background: #111111;
+  height: 240px;
+  width: 100%;
+}
+
+.text {
+  color: white;
+}

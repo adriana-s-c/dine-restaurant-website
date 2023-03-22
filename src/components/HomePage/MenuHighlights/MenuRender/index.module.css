@@ -40,21 +40,12 @@
 }
 
 .divider {
-  position: absolute;
-  width: 540px;
-  height: 1px;
-  left: 735px;
-  top: 2606px;
-  background: #ffffff;
-  mix-blend-mode: normal;
-  opacity: 0.15;
 }
 
 .menuBox {
   display: flex;
   flex-direction: column;
   position: absolute;
-  font-family: "League Spartan";
   width: 386px;
   height: 540px;
   left: 735px;
