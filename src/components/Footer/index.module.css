@@ -3,8 +3,35 @@
   background: #111111;
   height: 240px;
   width: 100%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
 }
 
-.text {
-  color: white;
+.boxContent {
+  display: flex;
+  flex-direction: row;
+  margin-left: calc((100% - 1100px) / 2);
+  margin-top: calc((240px - 86px) / 2);
+}
+
+.logo {
+  width: 103.42px;
+  height: 40px;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  margin-left: 192px;
+}
+
+.openingText {
+  margin-left: 124px;
 }
