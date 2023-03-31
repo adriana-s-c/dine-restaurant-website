@@ -15,7 +15,7 @@ export function Header() {
             the freshest produce from the comfort of our farmhouse.
           </span>
         </div>
-        <button className={styles.bookTableButton}>Book a table</button>
+        <button className={styles.button}>Book a table</button>
       </div>
     </div>
   );

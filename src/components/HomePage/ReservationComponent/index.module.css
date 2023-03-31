@@ -29,6 +29,12 @@
   font-size: 17px;
   line-height: 16px;
   letter-spacing: 2.5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #111111;
+  background-color: #ffffff;
 }
 
 .header {
