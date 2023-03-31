@@ -98,17 +98,35 @@
   letter-spacing: 2.5px;
 }
 
-.brownLine {
+.brownLineFirst {
   width: 95px;
   height: 1px;
   background: #9e7f66;
   margin-top: 28px;
 }
 
-.notChosen {
-  color: #4c4c4c;
+.brownLineSecond {
+  width: 95px;
+  height: 1px;
+  background: #9e7f66;
+  margin-top: 73px;
 }
 
+.brownLineThird {
+  width: 95px;
+  height: 1px;
+  background: #9e7f66;
+  margin-top: 118px;
+}
+
+.notChosen {
+  color: #4c4c4c;
+  cursor: pointer;
+}
+
+.chosen {
+  cursor: pointer;
+}
 .eventTypes {
   margin-left: 32px;
 }
