@@ -54,7 +54,7 @@
   font-size: 20px;
 }
 
-.bookTableButton {
+.button {
   margin-top: 40px;
   width: 245px;
   height: 64px;
@@ -67,4 +67,9 @@
   letter-spacing: 2.5px;
   line-height: 16px;
   float: left;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #111111;
 }
