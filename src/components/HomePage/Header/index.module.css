@@ -72,4 +72,5 @@
 .button:hover {
   background-color: #ffffff;
   color: #111111;
+  cursor: pointer;
 }

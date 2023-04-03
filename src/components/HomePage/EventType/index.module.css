@@ -84,6 +84,7 @@
   color: #111111;
   background-color: #ffffff;
   border: 1px solid #111111;
+  cursor: pointer;
 }
 
 .contentBox {
