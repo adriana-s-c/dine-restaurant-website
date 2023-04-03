@@ -1,11 +1,12 @@
 import * as React from "react";
 import "./App.css";
-import { HomePage, Footer } from "./components";
+import { HomePage, Footer, FormPage } from "./components";
 
 function App() {
   return (
     <div className="App">
-      <HomePage />
+      <FormPage />
+      {/* <HomePage /> */}
       <Footer />
     </div>
   );

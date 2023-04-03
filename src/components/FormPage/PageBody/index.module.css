@@ -1,0 +1,15 @@
+.box {
+  background-color: #ffffff;
+  height: 320px;
+  width: 100%;
+  background-image: url(../../../images/patterns/pattern-curve-bottom-right.svg);
+  background-repeat: no-repeat;
+}
+
+.patternLines {
+  position: absolute;
+  width: 160px;
+  height: 76px;
+  left: 655px;
+  top: 765px;
+}
