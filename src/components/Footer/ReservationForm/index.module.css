@@ -1,0 +1,151 @@
+.box {
+  position: absolute;
+  width: 540px;
+  height: 545px;
+  left: 735px;
+  top: 258px;
+  background: #ffffff;
+  box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+}
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  height: 447px;
+  width: 444px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 48px;
+}
+
+.field {
+  height: 29px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #111111;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #c6c6c6;
+  border-width: 1px;
+  padding-left: 16px;
+  padding-bottom: 14px;
+}
+.field:focus {
+  outline: none;
+}
+
+.label {
+  width: 90px;
+  height: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #111111;
+  margin-top: 9px;
+  margin-right: 35px;
+}
+
+.fieldDate {
+  width: 64px;
+  height: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #111111;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #c6c6c6;
+  border-width: 1px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  margin-right: 16px;
+}
+
+.fieldDate:focus {
+  outline: none;
+}
+
+.fieldDateLonger {
+  width: 81px;
+  height: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #111111;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #c6c6c6;
+  border-width: 1px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+}
+
+.fieldDateLonger:focus {
+  outline: none;
+}
+
+.select {
+  width: 97px;
+  height: 43px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #111111;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #c6c6c6;
+  border-width: 1px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url(../../../images/icons/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 8px;
+}
+
+.select:focus {
+  outline: none;
+}
+
+.option {
+  background-color: red;
+}
+
+.button {
+  background: #111111;
+  width: 444px;
+  height: 64px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  color: #ffffff;
+}
+
+.dateBox {
+  width: 444px;
+  height: 43px;
+  display: flex;
+  flex-direction: row;
+  width: 444px;
+  justify-content: space-around;
+}
