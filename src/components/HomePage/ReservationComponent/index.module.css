@@ -35,6 +35,7 @@
 .button:hover {
   color: #111111;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .header {

@@ -139,6 +139,15 @@
   text-align: center;
   letter-spacing: 2.5px;
   color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #111111;
+  border: 1px solid #111111;
 }
 
 .dateBox {
