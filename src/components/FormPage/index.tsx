@@ -1,3 +1,4 @@
+import { ReservationForm } from "../Footer/ReservationForm";
 import { FormHeader } from "./FormHeader";
 import { PageBody } from "./PageBody";
 
@@ -6,6 +7,7 @@ export function FormPage() {
     <>
       <FormHeader />
       <PageBody />
+      <ReservationForm />
     </>
   );
 }

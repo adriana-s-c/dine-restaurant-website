@@ -1,0 +1,35 @@
+.counterBox {
+  display: flex;
+  flex-direction: row;
+  width: 444px;
+  height: 41px;
+  border-width: 1px;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom-color: #c6c6c6;
+}
+
+.plus {
+  width: 9.24px;
+  height: 9.24px;
+  padding: 10px;
+}
+
+.minus {
+  width: 5.8px;
+  height: 2.38px;
+  padding: 10px;
+}
+
+.peopleText {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+  color: #151515;
+}
