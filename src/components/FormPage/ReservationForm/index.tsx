@@ -260,7 +260,11 @@ export function ReservationForm() {
               </Field>
             </div>
             <Counter people={people} setPeople={setPeople} />
-            <button type="submit" className={styles.button}>
+            <button
+              type="submit"
+              className={styles.button}
+              disabled={people > 14}
+            >
               MAKE RESERVATION
             </button>
           </Form>

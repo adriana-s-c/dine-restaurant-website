@@ -264,6 +264,12 @@
   border: 1px solid #111111;
 }
 
+.button:disabled {
+  cursor: not-allowed;
+  background: #111111;
+  color: #ffffff;
+}
+
 .dateBox {
   width: 444px;
   height: 43px;
