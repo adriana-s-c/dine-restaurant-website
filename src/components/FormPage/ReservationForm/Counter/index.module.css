@@ -13,6 +13,21 @@
   border-bottom-color: #c6c6c6;
 }
 
+.counterBoxError {
+  display: flex;
+  flex-direction: row;
+  width: 444px;
+  height: 41px;
+  border-width: 1px;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom-color: #b54949;
+}
+
 .plus {
   width: 9.24px;
   height: 9.24px;
@@ -32,4 +47,27 @@
   line-height: 24px;
   letter-spacing: -0.25px;
   color: #151515;
+}
+
+.peopleTextError {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+  color: #b54949;
+}
+
+.counterBoxWithErrorMessage {
+  display: flex;
+  flex-direction: column;
+}
+
+.errorMessage {
+  color: #b54949;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 9px;
+  letter-spacing: -0.125px;
+  margin-top: 8px;
 }

@@ -12,6 +12,7 @@ interface Values {
   hour: number;
   minutes: number;
   daytime: string;
+  people: number;
 }
 
 function validateEmail(value: string) {
@@ -89,6 +90,8 @@ function validateMinutes(value: number) {
 }
 
 export function ReservationForm() {
+  const [people, setPeople] = React.useState(2);
+
   return (
     <div className={styles.box}>
       <Formik
@@ -100,10 +103,13 @@ export function ReservationForm() {
           year: "",
           hour: "",
           minutes: "",
-          // daytime: "",
+          daytime: "AM",
+          people: 2,
         }}
-        onSubmit={(values) => {
-          console.log(values);
+        onSubmit={async (values) => {
+          values.people = people;
+          await new Promise((r) => setTimeout(r, 500));
+          alert(JSON.stringify(values, null, 2));
         }}
       >
         {({ errors, touched }) => (
@@ -252,7 +258,7 @@ export function ReservationForm() {
                 <option>PM</option>
               </Field>
             </div>
-            <Counter />
+            <Counter people={people} setPeople={setPeople} />
             <button type="submit" className={styles.button}>
               MAKE RESERVATION
             </button>
