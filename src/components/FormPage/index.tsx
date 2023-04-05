@@ -1,4 +1,4 @@
-import { ReservationForm } from "../Footer/ReservationForm";
+import { ReservationForm } from "./ReservationForm";
 import { FormHeader } from "./FormHeader";
 import { PageBody } from "./PageBody";
 
