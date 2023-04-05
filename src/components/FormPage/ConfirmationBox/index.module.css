@@ -1,0 +1,88 @@
+.box {
+  position: absolute;
+  width: 540px;
+  height: 545px;
+  left: 735px;
+  top: 258px;
+  background: #ffffff;
+  box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+  text-align: center;
+}
+
+.reservationBox {
+  margin: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #242b37;
+}
+
+.heading {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 80px;
+  letter-spacing: -1px;
+  color: #242b37;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.textHeader {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 80px;
+  letter-spacing: -1px;
+  color: #242b37;
+  text-align: center;
+  margin: 0px;
+}
+
+.dataBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  justify-content: space-evenly;
+}
+
+.nameText {
+  font-size: 30px;
+  margin: 0px;
+  margin-top: 10px;
+  word-break: break-all;
+}
+
+.emailText {
+  margin-top: 5px;
+  word-break: break-all;
+}
+
+.timeText {
+  margin-top: 0;
+}
+
+.detailsBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.image {
+  width: 240px;
+  height: 300px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.detailsText {
+  width: 240px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.tableText {
+  margin: 0;
+}

@@ -2,6 +2,7 @@ import * as React from "react";
 import { Formik, Form, Field } from "formik";
 import styles from "./index.module.css";
 import { Counter } from "./Counter";
+import { DataContext } from "../../../context";
 
 interface Values {
   name: string;
@@ -77,7 +78,6 @@ function validateHour(value: number) {
   }
   return error;
 }
-
 function validateMinutes(value: number) {
   let error;
   if (!value) {
@@ -91,6 +91,7 @@ function validateMinutes(value: number) {
 
 export function ReservationForm() {
   const [people, setPeople] = React.useState(2);
+  const { setData } = React.useContext(DataContext);
 
   return (
     <div className={styles.box}>
@@ -109,7 +110,7 @@ export function ReservationForm() {
         onSubmit={async (values) => {
           values.people = people;
           await new Promise((r) => setTimeout(r, 500));
-          alert(JSON.stringify(values, null, 2));
+          setData(values);
         }}
       >
         {({ errors, touched }) => (
