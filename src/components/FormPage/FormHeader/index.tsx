@@ -1,10 +1,13 @@
 import styles from "./index.module.css";
 import DineLogo from "../../../images/icons/dine.svg";
+import { Link } from "react-router-dom";
 
 export function FormHeader() {
   return (
     <div className={styles.header}>
-      <img src={DineLogo} alt="Dine Logo" className={styles.websiteName} />
+      <Link to="/">
+        <img src={DineLogo} alt="Dine Logo" className={styles.websiteName} />
+      </Link>
       <div className={styles.textBox}>
         <h2 className={styles.textHeader}>Reservations</h2>
         <p className={styles.text}>

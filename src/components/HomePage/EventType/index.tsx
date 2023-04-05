@@ -4,6 +4,7 @@ import familyGatheringPic from "../../../images/homepage/family-gathering-deskto
 import socialEventPic from "../../../images/homepage/social-events-desktop.jpg";
 import specialEventPic from "../../../images/homepage/special-events-desktop.jpg";
 import patternLines from "../../../images/patterns/pattern-lines.svg";
+import { Link } from "react-router-dom";
 
 const eventTypeData = [
   {
@@ -76,7 +77,9 @@ export function EventType() {
               return event.type === eventType ? event.text : null;
             })}
           </p>
-          <button className={styles.button}>Book a table</button>
+          <Link to="booktable">
+            <button className={styles.button}>Book a table</button>
+          </Link>
           <div className={styles.typeEventBox}>
             <div className={setBrownLine(eventType)} />
             <div className={styles.eventTypes}>
