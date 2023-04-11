@@ -15,6 +15,7 @@ export function FormHeader() {
           feel free to call on the phone number below. We’ll be happy to
           accommodate you.
         </p>
+        <button className={styles.mobileButton}>RESERVE PLACE</button>
       </div>
     </div>
   );

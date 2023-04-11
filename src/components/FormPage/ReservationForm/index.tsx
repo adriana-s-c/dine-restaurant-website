@@ -168,42 +168,44 @@ export function ReservationForm() {
                   </div>
                 ) : null}
               </div>
-              <Field
-                id="month"
-                name="month"
-                placeholder="MM"
-                className={
-                  errors.month && touched.month
-                    ? styles.fieldDateError
-                    : styles.fieldDate
-                }
-                maxLength="2"
-                validate={validateMonth}
-              />
-              <Field
-                id="day"
-                name="day"
-                placeholder="DD"
-                className={
-                  errors.day && touched.day
-                    ? styles.fieldDateError
-                    : styles.fieldDate
-                }
-                maxLength="2"
-                validate={validateDay}
-              />
-              <Field
-                id="year"
-                name="year"
-                placeholder="YYYY"
-                className={
-                  errors.year && touched.year
-                    ? styles.fieldDateBiggerError
-                    : styles.fieldDateBigger
-                }
-                maxLength="4"
-                validate={validateYear}
-              />
+              <div className={styles.dateMobileBox}>
+                <Field
+                  id="month"
+                  name="month"
+                  placeholder="MM"
+                  className={
+                    errors.month && touched.month
+                      ? styles.fieldDateError
+                      : styles.fieldDate
+                  }
+                  maxLength="2"
+                  validate={validateMonth}
+                />
+                <Field
+                  id="day"
+                  name="day"
+                  placeholder="DD"
+                  className={
+                    errors.day && touched.day
+                      ? styles.fieldDateError
+                      : styles.fieldDate
+                  }
+                  maxLength="2"
+                  validate={validateDay}
+                />
+                <Field
+                  id="year"
+                  name="year"
+                  placeholder="YYYY"
+                  className={
+                    errors.year && touched.year
+                      ? styles.fieldDateBiggerError
+                      : styles.fieldDateBigger
+                  }
+                  maxLength="4"
+                  validate={validateYear}
+                />
+              </div>
             </div>
             <div className={styles.dateBox}>
               <div className={styles.errorMessageBox}>
@@ -225,39 +227,41 @@ export function ReservationForm() {
                   </div>
                 ) : null}
               </div>
-              <Field
-                id="hour"
-                name="hour"
-                placeholder="09"
-                className={
-                  errors.hour && touched.hour
-                    ? styles.fieldDateError
-                    : styles.fieldDate
-                }
-                maxLength="2"
-                validate={validateHour}
-              />
-              <Field
-                id="minutes"
-                name="minutes"
-                placeholder="00"
-                className={
-                  errors.minutes && touched.minutes
-                    ? styles.fieldDateError
-                    : styles.fieldDate
-                }
-                maxLength="2"
-                validate={validateMinutes}
-              />
-              <Field
-                as="select"
-                id="daytime"
-                name="daytime"
-                className={styles.select}
-              >
-                <option className={styles.option}>AM</option>
-                <option>PM</option>
-              </Field>
+              <div className={styles.dateMobileBox}>
+                <Field
+                  id="hour"
+                  name="hour"
+                  placeholder="09"
+                  className={
+                    errors.hour && touched.hour
+                      ? styles.fieldDateError
+                      : styles.fieldDate
+                  }
+                  maxLength="2"
+                  validate={validateHour}
+                />
+                <Field
+                  id="minutes"
+                  name="minutes"
+                  placeholder="00"
+                  className={
+                    errors.minutes && touched.minutes
+                      ? styles.fieldDateError
+                      : styles.fieldDate
+                  }
+                  maxLength="2"
+                  validate={validateMinutes}
+                />
+                <Field
+                  as="select"
+                  id="daytime"
+                  name="daytime"
+                  className={styles.select}
+                >
+                  <option className={styles.option}>AM</option>
+                  <option>PM</option>
+                </Field>
+              </div>
             </div>
             <Counter people={people} setPeople={setPeople} />
             <button
