@@ -13,6 +13,10 @@
   margin-top: 65px;
 }
 
+.mobileButton {
+  display: none;
+}
+
 .textHeader {
   height: 80px;
   margin: 0px;
@@ -62,5 +66,56 @@
     margin-top: 12px;
     width: 573px;
     margin-left: calc((100% - 573px) / 2);
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    background-image: url(../../../images/booking/hero-bg-mobile.jpg);
+  }
+  .websiteName {
+    width: 82px;
+    height: 32px;
+    margin-top: 56px;
+    margin-bottom: 44px;
+    margin-left: calc((100% - 82px) / 2);
+  }
+  .textBox {
+    height: 240px;
+    width: 327px;
+    left: calc((100% - 327px) / 2);
+    top: 132px;
+  }
+  .textHeader {
+    width: 327px;
+    height: 40px;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+  }
+  .text {
+    width: 327px;
+    height: 104px;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 19px;
+    margin-top: 13px;
+    margin-left: 0;
+  }
+  .mobileButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 245px;
+    height: 64px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 16px;
+    letter-spacing: 2.5px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background: none;
+    margin-left: calc((100% - 245px) / 2);
   }
 }

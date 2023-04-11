@@ -298,3 +298,68 @@
     top: 385px;
   }
 }
+
+@media (max-width: 600px) {
+  .box {
+    width: 327px;
+    height: 585px;
+    left: calc((100% - 327px) / 2);
+    top: 463px;
+  }
+  .formContent {
+    width: 263px;
+    height: 519px;
+    margin-left: calc((100% - 263px) / 2);
+    margin-top: 34px;
+  }
+  .fieldBox {
+    width: 263px;
+  }
+  .field {
+    width: 247px;
+    height: 43px;
+  }
+  .fieldError {
+    width: 263px;
+    height: 43px;
+  }
+  .dateBox {
+    width: 263px;
+    height: 79px;
+    flex-direction: column;
+  }
+  .dateMobileBox {
+    display: flex;
+    flex-direction: row;
+  }
+  .fieldDate {
+    width: 58.4px;
+    height: 29px;
+    margin-right: 12px;
+    padding-left: 14.6px;
+  }
+  .fieldDateError {
+    width: 58.4px;
+    height: 29px;
+    margin-right: 12px;
+    padding-left: 14.6px;
+  }
+  .label {
+    margin: 0;
+    margin-bottom: 8px;
+  }
+  .fieldDateBigger {
+    width: 73px;
+    height: 29px;
+    padding-left: 15px;
+  }
+  .select {
+    width: 88px;
+    height: 45px;
+    padding-bottom: 15px;
+  }
+  .button {
+    width: 263px;
+    height: 64px;
+  }
+}

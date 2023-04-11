@@ -71,3 +71,10 @@
   letter-spacing: -0.125px;
   margin-top: 8px;
 }
+
+@media (max-width: 600px) {
+  .counterBox {
+    width: 263px;
+    height: 41px;
+  }
+}
