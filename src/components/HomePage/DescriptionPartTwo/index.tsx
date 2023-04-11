@@ -1,6 +1,7 @@
 import styles from "./index.module.css";
 import divideIcon from "../../../images/patterns/pattern-divide.svg";
-import locallySourced from "../../../images/homepage/locally-sourced-desktop.jpg";
+import locallySourcedDesktop from "../../../images/homepage/locally-sourced-desktop.jpg";
+import locallySourcedtablet from "../../../images/homepage/locally-sourced-tablet.jpg";
 import patternLines from "../../../images/patterns/pattern-lines.svg";
 
 export function DescriptionPartTwo() {
@@ -18,11 +19,18 @@ export function DescriptionPartTwo() {
           food.
         </p>
       </div>
-      <img
-        src={locallySourced}
-        alt="Preparing Dish"
-        className={styles.picture}
-      />
+      <picture>
+        <source
+          media="(max-width: 1100px)"
+          srcSet={locallySourcedtablet}
+          className={styles.picture}
+        />
+        <img
+          src={locallySourcedDesktop}
+          alt="Preparing Dish"
+          className={styles.picture}
+        />
+      </picture>
       <img
         src={patternLines}
         alt="Pattern of Lines"
