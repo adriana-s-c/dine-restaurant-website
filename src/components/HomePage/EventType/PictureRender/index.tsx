@@ -10,18 +10,6 @@ type PictureRenderProps = {
   eventType: string | any;
 };
 
-function imageAlt(eventType: string) {
-  if (eventType === "Family Gathering") {
-    return "Family Gathering by the Table";
-  }
-  if (eventType === "Special Events") {
-    return "Group of People Celebrating by the Table";
-  }
-  if (eventType === "Social Events") {
-    return "People Gathered on a Social Event by the Table";
-  }
-}
-
 export function PictureRender({ eventType }: PictureRenderProps) {
   let description;
   let desktop;

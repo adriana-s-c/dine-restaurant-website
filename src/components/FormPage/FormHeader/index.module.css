@@ -41,3 +41,26 @@
   font-size: 20px;
   line-height: 30px;
 }
+
+@media (max-width: 1100px) {
+  .header {
+    background-image: url(../../../images/booking/hero-bg-tablet.jpg);
+  }
+  .textBox {
+    width: 689px;
+    height: 166px;
+    left: calc((100% - 689px) / 2);
+    top: 166px;
+    text-align: center;
+  }
+  .websiteName {
+    margin-left: 39px;
+    margin-bottom: 58px;
+  }
+  .text {
+    margin-bottom: 38px;
+    margin-top: 12px;
+    width: 573px;
+    margin-left: calc((100% - 573px) / 2);
+  }
+}
