@@ -6,23 +6,23 @@
   background-position: -350px 0;
 }
 
+.eventTypeBox {
+  display: flex;
+  flex-direction: row;
+  color: #242b37;
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  left: calc((100% - 1110px) / 2);
+  top: 3152px;
+}
+
 .patternLines {
   position: absolute;
   width: 160px;
   height: 76px;
   left: calc((100% - 1100px) / 2 - 40px);
   top: 3114px;
-}
-
-.eventTypeBox {
-  display: flex;
-  flex-direction: row;
-  color: #242b37;
-  width: 1110px;
-  height: 600px;
-  position: absolute;
-  left: calc((100% - 1110px) / 2);
-  top: 3152px;
 }
 
 .picture {
@@ -136,4 +136,99 @@
 }
 .eventTypes {
   margin-left: 32px;
+}
+
+@media (max-width: 1100px) {
+  .box {
+    width: 100%;
+    height: 900px;
+  }
+  .eventTypeBox {
+    width: 689px;
+    height: 781px;
+    top: 3493px;
+    left: calc((100% - 689px) / 2);
+    flex-direction: column;
+  }
+  .typeEventBox {
+    width: 689px;
+    height: 36px;
+  }
+  .picture {
+    position: absolute;
+    left: calc((100% - 573px) / 2);
+    width: 573px;
+    height: 360px;
+  }
+  .contentBox {
+    position: absolute;
+    left: calc((100% - 689px) / 2);
+    top: 377px;
+    width: 689px;
+    height: 364px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .patternLines {
+    position: absolute;
+    left: 39px;
+    top: 3455px;
+  }
+  .eventTypes {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    text-align: center;
+  }
+  .chosen {
+    width: 223px;
+    margin-right: 10px;
+  }
+  .chosen:last-child {
+    margin-right: 0px;
+  }
+  .notChosen {
+    width: 223px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-right: 10px;
+  }
+  .notChosen:last-child {
+    margin-right: 0px;
+  }
+  .tabletRender {
+    width: 457px;
+    height: 281px;
+    margin-top: 47px;
+  }
+  .header {
+    margin: 0px;
+    margin-bottom: 19px;
+    text-align: center;
+  }
+  .content {
+    margin: 0px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .brownLineFirst {
+    position: absolute;
+    left: 70px;
+    top: 20px;
+  }
+  .brownLineSecond {
+    position: absolute;
+    left: 295px;
+    top: -24px;
+  }
+  .brownLineThird {
+    position: absolute;
+    left: 528px;
+    top: -70px;
+  }
+  .button {
+    margin: 0px;
+    margin-left: calc((100% - 245px) / 2);
+  }
 }

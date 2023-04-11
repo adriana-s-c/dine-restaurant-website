@@ -57,3 +57,12 @@
   left: 735px;
   top: 2486px;
 }
+
+@media (max-width: 1100px) {
+  .menuBox {
+    width: 573px;
+    height: 386px;
+    left: 97px;
+    top: 2891px;
+  }
+}

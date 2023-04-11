@@ -1,6 +1,7 @@
 .header {
   background-color: #111111;
   height: 820px;
+  width: 100%;
   background-image: url(../../../images/homepage/hero-bg-desktop.jpg);
   background-position-x: right;
   background-repeat: no-repeat;
@@ -13,22 +14,18 @@
 .websiteName {
   color: #ffffff;
   position: absolute;
-  width: 103px;
-  height: 40px;
-  left: 167px;
-  top: 65px;
 }
 
 .box {
   position: relative;
   width: 507px;
-  height: 364px;
+  height: 557px;
   left: 165px;
-  top: 258px;
+  top: 65px;
 }
 
 .descriptionBox {
-  height: 260px;
+  height: px;
   color: #ffffff;
   font-family: "League Spartan";
   text-align: left;
@@ -43,6 +40,7 @@
   line-height: 80px;
   letter-spacing: -1px;
   margin-bottom: 10px;
+  margin-top: 153px;
 }
 
 .descriptionText {
@@ -73,4 +71,46 @@
   background-color: #ffffff;
   color: #111111;
   cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .header {
+    background-image: url(../../../images/homepage/hero-bg-tablet.jpg);
+    background-position: 0 -50px;
+    background-size: cover;
+    background-color: #17192b;
+    height: 992px;
+    width: 100%;
+  }
+  .box {
+    position: absolute;
+    width: 689px;
+    height: 402px;
+    top: 394px;
+    left: calc((100% - 689px) / 2);
+  }
+  .websiteName {
+    left: calc((100% - 103px) / 2);
+    top: 0px;
+  }
+  .descriptionBox {
+    height: 128px;
+    text-align: center;
+    align-items: center;
+  }
+  .button {
+    margin: 0px;
+  }
+  .descriptionHeader {
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: -0.6px;
+    margin-bottom: 20px;
+    margin-top: 78px;
+  }
+  .descriptionText {
+    height: 60px;
+    margin-bottom: 52px;
+  }
 }

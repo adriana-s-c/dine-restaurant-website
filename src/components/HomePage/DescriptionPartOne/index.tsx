@@ -1,15 +1,24 @@
+import * as React from "react";
 import styles from "./index.module.css";
-import enjoyablePlace from "../../../images/homepage/enjoyable-place-desktop.jpg";
+import enjoyablePlaceDesktop from "../../../images/homepage/enjoyable-place-desktop.jpg";
+import enjoyablePlaceTablet from "../../../images/homepage/enjoyable-place-tablet.jpg";
 import divideIcon from "../../../images/patterns/pattern-divide.svg";
 
 export function DescriptionPartOne() {
   return (
     <div className={styles.box}>
-      <img
-        src={enjoyablePlace}
-        alt="Enjoyable Place"
-        className={styles.picture}
-      />
+      <picture>
+        <source
+          media="(max-width: 1100px)"
+          srcSet={enjoyablePlaceTablet}
+          className={styles.picture}
+        />
+        <img
+          src={enjoyablePlaceDesktop}
+          alt="Enjoyable Place"
+          className={styles.picture}
+        />
+      </picture>
       <div className={styles.descriptionBox}>
         <img src={divideIcon} alt="Divide Icon" className={styles.divideIcon} />
         <header className={styles.header}>

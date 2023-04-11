@@ -1,10 +1,8 @@
 import * as React from "react";
 import styles from "./index.module.css";
-import familyGatheringPic from "../../../images/homepage/family-gathering-desktop.jpg";
-import socialEventPic from "../../../images/homepage/social-events-desktop.jpg";
-import specialEventPic from "../../../images/homepage/special-events-desktop.jpg";
 import patternLines from "../../../images/patterns/pattern-lines.svg";
 import { Link } from "react-router-dom";
+import { PictureRender } from "./PictureRender";
 
 const eventTypeData = [
   {
@@ -23,17 +21,6 @@ const eventTypeData = [
     text: "Are you looking to have a larger social event? No problem! We’re more than happy to cater for big parties. We’ll work with you to make your event a hit with everyone.",
   },
 ];
-
-function pictureRender(eventType: string) {
-  switch (eventType) {
-    case "Special Events":
-      return specialEventPic;
-    case "Social Events":
-      return socialEventPic;
-    case "Family Gathering":
-      return familyGatheringPic;
-  }
-}
 
 function setBrownLine(eventType: string) {
   if (eventType === "Family Gathering") {
@@ -65,21 +52,19 @@ export function EventType() {
   return (
     <div className={styles.box}>
       <div className={styles.eventTypeBox}>
-        <img
-          src={pictureRender(eventType)}
-          alt={imageAlt(eventType)}
-          className={styles.picture}
-        />
+        <PictureRender eventType={eventType} />
         <div className={styles.contentBox}>
-          <h2 className={styles.header}>{eventType}</h2>
-          <p className={styles.content}>
-            {eventTypeData.map((event) => {
-              return event.type === eventType ? event.text : null;
-            })}
-          </p>
-          <Link to="booktable">
-            <button className={styles.button}>Book a table</button>
-          </Link>
+          <div className={styles.tabletRender}>
+            <h2 className={styles.header}>{eventType}</h2>
+            <p className={styles.content}>
+              {eventTypeData.map((event) => {
+                return event.type === eventType ? event.text : null;
+              })}
+            </p>
+            <Link to="booktable">
+              <button className={styles.button}>Book a table</button>
+            </Link>
+          </div>
           <div className={styles.typeEventBox}>
             <div className={setBrownLine(eventType)} />
             <div className={styles.eventTypes}>

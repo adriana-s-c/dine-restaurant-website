@@ -64,3 +64,43 @@
   right: 51px;
   top: 1873px;
 }
+
+@media (max-width: 1100px) {
+  .picture {
+    width: 573px;
+    height: 360px;
+    top: 1689px;
+    left: calc((100% - 573px) / 2);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    background-position: 384px bottom;
+  }
+  .descriptionBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 573px;
+    height: 675px;
+    left: calc((100% - 573px) / 2);
+    top: 1689px;
+    text-align: center;
+  }
+  .content {
+    margin: 0px;
+    width: 457px;
+    height: 90px;
+    margin-left: calc((100% - 457px) / 2);
+  }
+  .divideIcon {
+    margin-bottom: 39px;
+    margin-top: 56px;
+    align-self: center;
+  }
+  .patternLines {
+    left: 638px;
+    top: 1917px;
+  }
+}
