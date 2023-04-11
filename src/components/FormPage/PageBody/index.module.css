@@ -13,3 +13,13 @@
   left: 655px;
   top: 765px;
 }
+
+@media (max-width: 1100px) {
+  .box {
+    height: 440px;
+    background-image: none;
+  }
+  .patternLines {
+    visibility: hidden;
+  }
+}
