@@ -25,12 +25,6 @@
   top: 3114px;
 }
 
-.picture {
-  width: 540px;
-  height: 600px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
 .header {
   height: 48px;
   left: 0%;
@@ -141,7 +135,7 @@
 @media (max-width: 1100px) {
   .box {
     width: 100%;
-    height: 900px;
+    height: 1044px;
   }
   .eventTypeBox {
     width: 689px;
@@ -154,12 +148,7 @@
     width: 689px;
     height: 36px;
   }
-  .picture {
-    position: absolute;
-    left: calc((100% - 573px) / 2);
-    width: 573px;
-    height: 360px;
-  }
+
   .contentBox {
     position: absolute;
     left: calc((100% - 689px) / 2);
@@ -230,5 +219,88 @@
   .button {
     margin: 0px;
     margin-left: calc((100% - 245px) / 2);
+  }
+}
+
+@media (max-width: 600px) {
+  .box {
+    width: 100%;
+    height: 1044px;
+    background-image: none;
+  }
+  .eventTypeBox {
+    width: 327px;
+    height: 840px;
+    left: calc((100% - 327px) / 2);
+    top: 4002px;
+  }
+  .contentBox {
+    width: 327px;
+    height: 300px;
+    left: calc((100% - 327px) / 2);
+    top: 449px;
+  }
+  .patternLines {
+    display: none;
+  }
+  .eventTypes {
+    flex-direction: column;
+    width: 326px;
+    height: 116px;
+    align-items: center;
+  }
+  .typeEventBox {
+    width: 326px;
+    height: 116px;
+    left: 24px;
+    top: 4451px;
+  }
+  .header {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+    width: 327px;
+  }
+  .content {
+    font-size: 16px;
+    line-height: 26px;
+    height: 104px;
+    width: 327px;
+    margin-bottom: 27px;
+  }
+  .tabletRender {
+    width: 327px;
+    height: 157px;
+    left: calc((100% - 327px) / 2);
+  }
+  .chosen {
+    width: 326px;
+    height: 28px;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  .chosen:last-child {
+    margin-bottom: 0px;
+  }
+  .notChosen {
+    width: 326px;
+    height: 28px;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  .brownLineFirst {
+    width: 48px;
+    left: 139px;
+    top: -20px;
+  }
+  .brownLineSecond {
+    width: 48px;
+    left: 139px;
+    top: -20px;
+  }
+  .brownLineThird {
+    width: 48px;
+    left: 139px;
+    top: -20px;
   }
 }

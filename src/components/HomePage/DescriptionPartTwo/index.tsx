@@ -2,6 +2,7 @@ import styles from "./index.module.css";
 import divideIcon from "../../../images/patterns/pattern-divide.svg";
 import locallySourcedDesktop from "../../../images/homepage/locally-sourced-desktop.jpg";
 import locallySourcedtablet from "../../../images/homepage/locally-sourced-tablet.jpg";
+import locallySourcedMobile from "../../../images/homepage/locally-sourced-mobile.jpg";
 import patternLines from "../../../images/patterns/pattern-lines.svg";
 
 export function DescriptionPartTwo() {
@@ -20,6 +21,11 @@ export function DescriptionPartTwo() {
         </p>
       </div>
       <picture>
+        <source
+          media="(max-width: 600px)"
+          srcSet={locallySourcedMobile}
+          className={styles.picture}
+        />
         <source
           media="(max-width: 1100px)"
           srcSet={locallySourcedtablet}
