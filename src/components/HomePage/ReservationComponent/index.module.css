@@ -63,8 +63,25 @@
     text-align: center;
   }
   .button {
-    position: absolute;
-    left: calc((100% - 245px) / 2);
-    top: 4388px;
+    position: relative;
+    left: calc((100vw - 245px) / 2);
+    top: 72px;
+  }
+}
+
+@media (max-width: 600px) {
+  .box {
+    height: 328px;
+  }
+  .header {
+    font-size: 32px;
+    left: calc((100vw - 327px) / 2);
+    width: 327px;
+    letter-spacing: -0.4px;
+  }
+  .button {
+    position: relative;
+    top: 100px;
+    left: calc((100vw - 245px) / 2);
   }
 }

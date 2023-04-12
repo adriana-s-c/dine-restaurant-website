@@ -66,3 +66,33 @@
     top: 2891px;
   }
 }
+
+@media (max-width: 600px) {
+  .dishesBox {
+    flex-direction: column;
+    width: 327px;
+    height: 363px;
+    text-align: center;
+  }
+  .menuBox {
+    left: calc((100% - 327px) / 2);
+    top: 2573px;
+  }
+  .dishPicture {
+    width: 327px;
+    height: 245px;
+  }
+  .brownLine {
+    display: none;
+  }
+  .divider {
+    width: 327px;
+  }
+  .dishDescription {
+    width: 327px;
+    height: 52px;
+  }
+  .textBox {
+    margin-top: 36px;
+  }
+}

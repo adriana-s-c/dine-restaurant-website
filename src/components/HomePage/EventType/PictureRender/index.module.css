@@ -12,3 +12,11 @@
     height: 360px;
   }
 }
+
+@media (max-width: 600px) {
+  .picture {
+    width: 326px;
+    height: 400px;
+    left: 0;
+  }
+}

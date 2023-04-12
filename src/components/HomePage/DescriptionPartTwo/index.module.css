@@ -79,8 +79,6 @@
     background-position: 384px bottom;
   }
   .descriptionBox {
-    display: flex;
-    flex-direction: column;
     justify-content: flex-end;
     width: 573px;
     height: 675px;
@@ -102,5 +100,50 @@
   .patternLines {
     left: 638px;
     top: 1917px;
+  }
+}
+
+@media (max-width: 600px) {
+  .box {
+    background-image: none;
+    margin-bottom: 71px;
+  }
+  .descriptionBox {
+    position: absolute;
+    width: 327px;
+    height: 662px;
+    left: 24px;
+    top: 1439px;
+  }
+  .patternLines {
+    display: none;
+  }
+  .picture {
+    position: absolute;
+    width: 327px;
+    height: 400px;
+    left: calc((100% - 327px) / 2);
+    top: 1419px;
+  }
+  .descriptionBox {
+    width: 327px;
+    height: 214px;
+    left: calc((100% - 327px) / 2);
+    top: 1887px;
+  }
+  .header {
+    height: 80px;
+    width: 100%;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+    margin-bottom: 13px;
+  }
+  .content {
+    width: 327px;
+    height: 78px;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0px;
   }
 }

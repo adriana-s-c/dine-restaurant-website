@@ -1,6 +1,9 @@
 import salmonPicture from "../../../../images/homepage/salmon-desktop-tablet.jpg";
+import salmonPictureMobile from "../../../../images/homepage/salmon-mobile.jpg";
 import beefPicture from "../../../../images/homepage/beef-desktop-tablet.jpg";
+import beefPictureMobile from "../../../../images/homepage/beef-mobile.jpg";
 import moussePicture from "../../../../images/homepage/chocolate-desktop-tablet.jpg";
+import moussePictureMobile from "../../../../images/homepage/chocolate-mobile.jpg";
 import styles from "./index.module.css";
 
 const dishes = [
@@ -10,6 +13,7 @@ const dishes = [
     description:
       "Our locally sourced salmon served with a refreshing buckwheat summer salad.",
     image: salmonPicture,
+    imageMobile: salmonPictureMobile,
     alt: "Seared Salmon Fillet",
   },
   {
@@ -18,6 +22,7 @@ const dishes = [
     description:
       "Our prime beef served to your taste with a delicious choice of seasonal sides.",
     image: beefPicture,
+    imageMobile: beefPictureMobile,
     alt: "Rosemary Filet Mignon",
   },
   {
@@ -26,6 +31,7 @@ const dishes = [
     description:
       "Creamy mousse combined with summer fruits and dark chocolate shavings.",
     image: moussePicture,
+    imageMobile: moussePictureMobile,
     alt: "Chocolate Mousse",
   },
 ];
@@ -37,13 +43,20 @@ export function MenuRender() {
         return (
           <div key={dish.id}>
             <div className={styles.dishesBox}>
-              <img
-                src={dish.image}
-                alt={dish.alt}
-                className={styles.dishPicture}
-              />
+              <picture>
+                <source
+                  media="(max-width: 600px)"
+                  srcSet={dish.imageMobile}
+                  className={styles.dishPicture}
+                />
+                <img
+                  src={dish.image}
+                  alt={dish.alt}
+                  className={styles.dishPicture}
+                />
+              </picture>
               <span className={styles.brownLine} />
-              <div>
+              <div className={styles.textBox}>
                 <p className={styles.dishName}>{dish.dishName}</p>
                 <p className={styles.dishDescription}>{dish.description}</p>
               </div>
