@@ -20,7 +20,7 @@
     background-image: none;
   }
   .patternLines {
-    visibility: hidden;
+    display: none;
   }
 }
 

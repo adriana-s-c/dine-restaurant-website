@@ -121,6 +121,8 @@
   }
   .box {
     top: 250px;
+    width: 327px;
+    left: calc((100% - 327px) / 2);
   }
   .descriptionHeader {
     font-size: 32px;
