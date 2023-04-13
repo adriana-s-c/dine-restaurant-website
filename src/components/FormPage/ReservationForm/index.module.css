@@ -29,6 +29,7 @@
   line-height: 28px;
   color: #111111;
   border-style: solid;
+  border-radius: 0;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -51,6 +52,7 @@
   line-height: 28px;
   color: #b54949;
   border-style: solid;
+  border-radius: 0;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -115,6 +117,7 @@
   font-size: 20px;
   line-height: 28px;
   color: #111111;
+  border-radius: 0;
   border-style: solid;
   border-top: none;
   border-left: none;
@@ -136,6 +139,7 @@
   line-height: 28px;
   color: #b54949;
   border-style: solid;
+  border-radius: 0;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -169,6 +173,7 @@
   line-height: 28px;
   color: #111111;
   border-style: solid;
+  border-radius: 0;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -197,6 +202,7 @@
   line-height: 28px;
   color: #b54949;
   border-style: solid;
+  border-radius: 0;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -220,6 +226,7 @@
   line-height: 28px;
   color: #111111;
   border-style: solid;
+  border-radius: 0;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -320,7 +327,7 @@
     height: 43px;
   }
   .fieldError {
-    width: 263px;
+    width: 247px;
     height: 43px;
   }
   .dateBox {
@@ -331,6 +338,10 @@
   .dateMobileBox {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+  }
+  .fieldBox {
+    width: 263px;
   }
   .fieldDate {
     width: 58.4px;
@@ -349,8 +360,13 @@
     margin-bottom: 8px;
   }
   .fieldDateBigger {
-    width: 73px;
+    width: 88px;
     height: 29px;
+
+    padding-left: 15px;
+  }
+  .fieldDateBiggerError {
+    width: 73px;
     padding-left: 15px;
   }
   .select {

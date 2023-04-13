@@ -17,7 +17,7 @@
 }
 
 .box {
-  position: relative;
+  position: absolute;
   width: 507px;
   height: 557px;
   left: 165px;
@@ -72,7 +72,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1120px) {
   .header {
     background-image: url(../../../images/homepage/hero-bg-tablet.jpg);
     background-position: 0 -50px;

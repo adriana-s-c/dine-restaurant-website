@@ -46,7 +46,7 @@ export function PictureRender({ eventType }: PictureRenderProps) {
         className={styles.picture}
       />
       <source
-        media="(max-width: 1100px)"
+        media="(max-width: 1120px)"
         srcSet={tablet}
         className={styles.picture}
       />
