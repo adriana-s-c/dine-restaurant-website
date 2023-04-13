@@ -138,7 +138,7 @@
     background-position: -500px top;
   }
   .eventTypeBox {
-    height: ;
+    height: 520px;
     width: 1000px;
     position: relative;
     top: 160px;
@@ -163,13 +163,13 @@
 @media (max-width: 1120px) {
   .box {
     width: 100%;
-    height: 1044px;
+    height: 929px;
   }
   .eventTypeBox {
     width: 689px;
     height: 781px;
-    top: 3493px;
-    left: calc((100% - 689px) / 2);
+    top: 120px;
+    left: calc((100vw - 689px) / 2);
     flex-direction: column;
   }
   .typeEventBox {
@@ -189,8 +189,8 @@
   }
   .patternLines {
     position: absolute;
-    left: 39px;
-    top: 3455px;
+    left: calc(((100vh - 669px) / 2) / 2);
+    top: 3550px;
   }
   .eventTypes {
     display: flex;
@@ -260,7 +260,7 @@
     width: 327px;
     height: 840px;
     left: calc((100% - 327px) / 2);
-    top: 4002px;
+    top: 90px;
   }
   .contentBox {
     width: 327px;

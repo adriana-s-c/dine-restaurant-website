@@ -67,8 +67,9 @@
     height: 272px;
   }
   .header {
+    width: 510px;
     margin-top: 72px;
-    left: calc((100% - 615px) / 2);
+    left: calc((100% - 510px) / 2);
     text-align: center;
   }
   .button {
