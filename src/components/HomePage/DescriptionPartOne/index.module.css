@@ -54,9 +54,30 @@
   font-size: 20px;
   line-height: 30px;
   color: #242b37;
+  margin: 0px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1400px) {
+  .box {
+    height: 620px;
+    background-position: top left;
+  }
+  .picture {
+    width: 440px;
+    height: 620px;
+    right: calc((100vw / 2));
+  }
+  .descriptionBox {
+    width: 350px;
+    height: 300px;
+    left: calc((100vw / 2) + 100px);
+  }
+  .header {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1120px) {
   .picture {
     position: absolute;
     width: 573px;

@@ -4,7 +4,14 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1400px) {
+  .picture {
+    width: 440px;
+    height: 520px;
+  }
+}
+
+@media (max-width: 1120px) {
   .picture {
     position: absolute;
     left: calc((100% - 573px) / 2);
