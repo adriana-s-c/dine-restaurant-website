@@ -11,7 +11,9 @@
 .boxContent {
   display: flex;
   flex-direction: row;
-  margin-left: calc((100% - 1100px) / 2);
+  width: calc((100vw - 330px));
+  width: 1110px;
+  margin-left: 167px;
   margin-top: calc((240px - 86px) / 2);
 }
 
@@ -23,8 +25,10 @@
 .textBox {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   text-transform: uppercase;
   font-style: normal;
+  width: 100%;
   font-weight: 400;
   font-size: 14px;
   line-height: 28px;
@@ -34,6 +38,12 @@
 
 .openingText {
   margin-left: 124px;
+}
+
+@media (max-width: 1400px) {
+  .textBox {
+    justify-content: normal;
+  }
 }
 
 @media (max-width: 1120px) {

@@ -7,10 +7,11 @@
 }
 
 .websiteName {
+  position: relative;
   width: 103px;
   height: 40px;
-  margin-left: 167px;
-  margin-top: 65px;
+  left: 167px;
+  top: 65px;
 }
 
 .mobileButton {
@@ -44,6 +45,13 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
+}
+
+@media (max-width: 1400px) {
+  .textBox {
+    width: 645px;
+    height: 215px;
+  }
 }
 
 @media (max-width: 1120px) {

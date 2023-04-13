@@ -2,7 +2,7 @@
   position: absolute;
   width: 540px;
   height: 545px;
-  left: 735px;
+  left: calc((100vw - 540px + 445px) / 2);
   top: 258px;
   background: #ffffff;
   box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
@@ -299,7 +299,14 @@
   flex-direction: column;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1400px) {
+  .box {
+    left: calc((100vw - 540px + 345px) / 2);
+    top: 485px;
+  }
+}
+
+@media (max-width: 1120px) {
   .box {
     left: calc((100% - 540px) / 2);
     top: 385px;
