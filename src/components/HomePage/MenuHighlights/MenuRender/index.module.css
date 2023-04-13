@@ -67,6 +67,7 @@
 
 @media (max-width: 1120px) {
   .menuBox {
+    position: relative;
     width: 573px;
     height: 386px;
     left: calc((100vw - 573px) / 2);
@@ -75,16 +76,16 @@
 }
 
 @media (max-width: 600px) {
+  .menuBox {
+    left: calc((100% - 327px) / 2);
+    top: 371px;
+    width: 327px;
+  }
   .dishesBox {
     flex-direction: column;
     width: 327px;
     height: 363px;
     text-align: center;
-  }
-  .menuBox {
-    left: calc((100% - 327px) / 2);
-    top: 2573px;
-    width: 327px;
   }
   .dishPicture {
     width: 327px;

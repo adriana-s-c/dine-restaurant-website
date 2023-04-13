@@ -94,17 +94,18 @@
 }
 
 @media (max-width: 1120px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    background-position: 384px bottom;
+    height: 723px;
+  }
   .picture {
     width: 573px;
     height: 360px;
     top: 1689px;
     left: calc((100% - 573px) / 2);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  }
-  .box {
-    display: flex;
-    flex-direction: column;
-    background-position: 384px bottom;
   }
   .descriptionBox {
     justify-content: flex-end;
@@ -126,8 +127,8 @@
     align-self: center;
   }
   .patternLines {
-    left: 638px;
-    top: 1917px;
+    left: calc((100vw - 540px) / 2 + 440px);
+    top: 140px;
   }
 }
 

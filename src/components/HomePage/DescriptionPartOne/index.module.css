@@ -78,16 +78,18 @@
 }
 
 @media (max-width: 1120px) {
+  .box {
+    height: 773px;
+    display: flex;
+    flex-direction: column;
+    background-position: -355px 101px;
+  }
   .picture {
     position: absolute;
     width: 573px;
     height: 360px;
     top: 896px;
     left: calc((100% - 573px) / 2);
-  }
-  .box {
-    display: flex;
-    flex-direction: column;
   }
   .descriptionBox {
     position: absolute;

@@ -66,8 +66,7 @@
     text-align: center;
   }
   .websiteName {
-    margin-left: 39px;
-    margin-bottom: 58px;
+    left: 100px;
   }
   .text {
     margin-bottom: 38px;
@@ -84,9 +83,9 @@
   .websiteName {
     width: 82px;
     height: 32px;
-    margin-top: 56px;
+    top: 56px;
     margin-bottom: 44px;
-    margin-left: calc((100% - 82px) / 2);
+    left: calc((100% - 82px) / 2);
   }
   .textBox {
     height: 240px;
