@@ -13,7 +13,7 @@
   position: absolute;
   width: 245px;
   height: 64px;
-  left: 1030px;
+  right: calc(((100% - 615px) / 2) / 2);
   margin-top: 88px;
   font-style: normal;
   font-weight: 600;
@@ -40,7 +40,7 @@
 
 .header {
   position: absolute;
-  left: 165px;
+  left: calc(((100% - 615px) / 2) / 2);
   margin-top: 99px;
   height: 48px;
   font-style: normal;
