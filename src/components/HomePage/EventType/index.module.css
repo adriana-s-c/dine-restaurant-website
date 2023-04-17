@@ -162,11 +162,11 @@
 
 @media (max-width: 1120px) {
   .box {
-    width: 100%;
+    width: 100vw;
     height: 929px;
   }
   .eventTypeBox {
-    width: 100%;
+    width: 689px;
     height: 781px;
     top: 120px;
     left: calc((100vw - 689px) / 2);
