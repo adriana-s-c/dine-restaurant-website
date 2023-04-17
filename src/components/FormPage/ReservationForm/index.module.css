@@ -9,75 +9,14 @@
 }
 
 .formContent {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
+  position: absolute;
+  top: calc((100% - 447px) / 2);
+  left: calc((100% - 444px) / 2);
   height: 447px;
   width: 444px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 48px;
-}
-
-.field {
-  height: 29px;
-  width: 428px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  color: #111111;
-  border-style: solid;
-  border-radius: 0;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-color: #c6c6c6;
-  border-width: 1px;
-  padding-left: 16px;
-  padding-bottom: 14px;
-  caret-color: #9e7f66;
-}
-.field:focus {
-  outline: none;
-}
-
-.fieldError {
-  height: 29px;
-  width: 428px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  color: #b54949;
-  border-style: solid;
-  border-radius: 0;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-color: #b54949;
-  border-width: 1px;
-  padding-left: 16px;
-  padding-bottom: 14px;
-}
-
-.fieldError:focus {
-  outline: none;
-}
-
-.fieldBox {
-  width: 444px;
-}
-
-.errorMessage {
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 9px;
-  letter-spacing: -0.125px;
-  color: #b54949;
-  margin-top: 12px;
-  padding-left: 16px;
 }
 
 .label {
@@ -89,7 +28,6 @@
   line-height: 28px;
   color: #111111;
   margin-top: 9px;
-  margin-right: 35px;
 }
 
 .labelError {
@@ -101,12 +39,6 @@
   line-height: 28px;
   color: #b54949;
   margin-top: 9px;
-  margin-right: 35px;
-}
-
-.fieldError::placeholder {
-  color: #b54949;
-  opacity: 0.5;
 }
 
 .fieldDate {
@@ -126,7 +58,6 @@
   border-width: 1px;
   padding-bottom: 14px;
   padding-left: 16px;
-  margin-right: 16px;
   caret-color: #9e7f66;
 }
 
@@ -147,7 +78,6 @@
   border-width: 1px;
   padding-bottom: 14px;
   padding-left: 16px;
-  margin-right: 16px;
   caret-color: #9e7f66;
 }
 
@@ -218,8 +148,8 @@
 }
 
 .select {
-  width: 97px;
-  height: 43px;
+  width: 90px;
+  height: 44px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -283,7 +213,15 @@
   display: flex;
   flex-direction: row;
   width: 444px;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.dateInputsBox {
+  width: 289px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .errorMessageDate {
@@ -323,63 +261,49 @@
   .formContent {
     width: 263px;
     height: 519px;
-    margin-left: calc((100% - 263px) / 2);
-    margin-top: 34px;
-  }
-  .fieldBox {
-    width: 263px;
-  }
-  .field {
-    width: 247px;
-    height: 43px;
-  }
-  .fieldError {
-    width: 247px;
-    height: 43px;
+    left: calc((100% - 263px) / 2);
+    top: calc((100% - 519px) / 2);
   }
   .dateBox {
     width: 263px;
     height: 79px;
     flex-direction: column;
   }
-  .dateMobileBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .fieldBox {
+  .dateInputsBox {
     width: 263px;
+    height: 43px;
   }
   .fieldDate {
-    width: 58.4px;
-    height: 29px;
-    margin-right: 12px;
+    width: 32px;
+    height: 30px;
     padding-left: 14.6px;
+    padding-right: 28px;
   }
   .fieldDateError {
-    width: 58.4px;
-    height: 29px;
-    margin-right: 12px;
+    width: 32px;
+    height: 30px;
     padding-left: 14.6px;
+    padding-right: 28px;
   }
   .label {
     margin: 0;
     margin-bottom: 8px;
   }
   .fieldDateBigger {
-    width: 88px;
-    height: 29px;
-
-    padding-left: 15px;
+    width: 49.64px;
+    height: 30px;
+    padding-left: 14.6px;
+    padding-right: 28px;
   }
   .fieldDateBiggerError {
-    width: 73px;
-    padding-left: 15px;
+    width: 49.64px;
+    height: 30px;
+    padding-left: 14.6px;
+    padding-right: 28px;
   }
   .select {
-    width: 88px;
-    height: 45px;
-    padding-bottom: 15px;
+    /* position: relative;
+    bottom: 0px; */
   }
   .button {
     width: 263px;

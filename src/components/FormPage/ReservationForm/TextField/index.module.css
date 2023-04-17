@@ -1,0 +1,83 @@
+.textFieldBox {
+  width: 444px;
+  height: 43px;
+}
+
+.textFieldBoxError {
+  height: 64px;
+}
+
+.field {
+  height: 28px;
+  width: 428px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #111111;
+  border-style: solid;
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #c6c6c6;
+  border-width: 1px;
+  padding-left: 16px;
+  padding-bottom: 14px;
+  caret-color: #9e7f66;
+}
+.field:focus {
+  outline: none;
+}
+
+.fieldError {
+  height: 29px;
+  width: 428px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #b54949;
+  border-style: solid;
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #b54949;
+  border-width: 1px;
+  padding-left: 16px;
+  padding-bottom: 14px;
+}
+
+.fieldError::placeholder {
+  color: #b54949;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.fieldError:focus {
+  outline: none;
+}
+
+.errorMessage {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 9px;
+  letter-spacing: -0.125px;
+  color: #b54949;
+  margin-top: 12px;
+  padding-left: 16px;
+}
+
+@media (max-width: 600px) {
+  .textFieldBox {
+    width: 263px;
+    height: 43px;
+  }
+  .field {
+    width: 247px;
+  }
+  .fieldError {
+    width: 247px;
+  }
+}

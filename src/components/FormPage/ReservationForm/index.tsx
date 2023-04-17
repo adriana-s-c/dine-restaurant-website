@@ -3,6 +3,7 @@ import { Formik, Form, Field } from "formik";
 import styles from "./index.module.css";
 import { Counter } from "./Counter";
 import { DataContext } from "../../../context";
+import { TextField } from "./TextField";
 
 interface Values {
   name: string;
@@ -115,37 +116,12 @@ export function ReservationForm() {
       >
         {({ errors, touched }) => (
           <Form className={styles.formContent}>
-            <div className={styles.fieldBox}>
-              <Field
-                id="name"
-                name="name"
-                placeholder="Name"
-                validate={validateName}
-                className={
-                  errors.name && touched.name ? styles.fieldError : styles.field
-                }
-              />
-              {errors.name && touched.name ? (
-                <div className={styles.errorMessage}>{errors.name}</div>
-              ) : null}
-            </div>
-            <div className={styles.fieldBox}>
-              <Field
-                id="email"
-                name="email"
-                placeholder="Email"
-                type="email"
-                validate={validateEmail}
-                className={
-                  errors.email && touched.email
-                    ? styles.fieldError
-                    : styles.field
-                }
-              />
-              {errors.email && touched.email ? (
-                <div className={styles.errorMessage}>{errors.email}</div>
-              ) : null}
-            </div>
+            <TextField errors={errors} touched={touched} textFieldName="name" />
+            <TextField
+              errors={errors}
+              touched={touched}
+              textFieldName="email"
+            />
             <div className={styles.dateBox}>
               <div className={styles.errorMessageBox}>
                 <label
@@ -168,7 +144,7 @@ export function ReservationForm() {
                   </div>
                 ) : null}
               </div>
-              <div className={styles.dateMobileBox}>
+              <div className={styles.dateInputsBox}>
                 <Field
                   id="month"
                   name="month"
@@ -180,6 +156,7 @@ export function ReservationForm() {
                   }
                   maxLength="2"
                   validate={validateMonth}
+                  inputmode="numeric"
                 />
                 <Field
                   id="day"
@@ -192,6 +169,7 @@ export function ReservationForm() {
                   }
                   maxLength="2"
                   validate={validateDay}
+                  inputmode="numeric"
                 />
                 <Field
                   id="year"
@@ -204,6 +182,7 @@ export function ReservationForm() {
                   }
                   maxLength="4"
                   validate={validateYear}
+                  inputmode="numeric"
                 />
               </div>
             </div>
@@ -227,7 +206,7 @@ export function ReservationForm() {
                   </div>
                 ) : null}
               </div>
-              <div className={styles.dateMobileBox}>
+              <div className={styles.dateInputsBox}>
                 <Field
                   id="hour"
                   name="hour"
@@ -239,6 +218,7 @@ export function ReservationForm() {
                   }
                   maxLength="2"
                   validate={validateHour}
+                  inputmode="numeric"
                 />
                 <Field
                   id="minutes"
@@ -251,6 +231,7 @@ export function ReservationForm() {
                   }
                   maxLength="2"
                   validate={validateMinutes}
+                  inputmode="numeric"
                 />
                 <Field
                   as="select"
