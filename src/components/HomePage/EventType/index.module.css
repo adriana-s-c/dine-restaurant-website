@@ -166,7 +166,7 @@
     height: 929px;
   }
   .eventTypeBox {
-    width: 689px;
+    width: 100%;
     height: 781px;
     top: 120px;
     left: calc((100vw - 689px) / 2);

@@ -72,6 +72,12 @@
   cursor: pointer;
 }
 
+@media (max-width: 1210px) {
+  .descriptionText {
+    width: 400px;
+  }
+}
+
 @media (max-width: 1120px) {
   .header {
     background-image: url(../../../images/homepage/hero-bg-tablet.jpg);
@@ -111,6 +117,7 @@
   .descriptionText {
     height: 60px;
     margin-bottom: 52px;
+    width: 573px;
   }
 }
 
