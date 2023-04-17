@@ -1,0 +1,88 @@
+.fieldBox {
+  width: 444px;
+  height: 43px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timeInputsBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 289px;
+}
+
+.label {
+  width: 90px;
+  height: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #111111;
+  margin-top: 9px;
+}
+
+.labelError {
+  width: 90px;
+  height: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #b54949;
+  margin-top: 9px;
+}
+
+.errorMessage {
+  color: #b54949;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 9px;
+  letter-spacing: -0.125px;
+}
+
+.select {
+  width: 97px;
+  height: 44px;
+  border-radius: 0;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #c6c6c6;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #111111;
+  padding-left: 16px;
+  padding-bottom: 15px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url(../../../../images/icons/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 65px 8px;
+}
+
+.select:focus {
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .fieldBox {
+    width: 263px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .timeInputsBox {
+    width: 263px;
+  }
+  .select {
+    width: 88px;
+    height: 43px;
+  }
+}
