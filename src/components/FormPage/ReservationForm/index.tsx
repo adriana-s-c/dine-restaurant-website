@@ -52,9 +52,7 @@ export function ReservationForm() {
               textFieldName="email"
             />
             <DateField errors={errors} touched={touched} />
-            <div className={styles.dateBox}>
-              <TimeField errors={errors} touched={touched} />
-            </div>
+            <TimeField errors={errors} touched={touched} />
             <Counter people={people} setPeople={setPeople} />
             <button
               type="submit"

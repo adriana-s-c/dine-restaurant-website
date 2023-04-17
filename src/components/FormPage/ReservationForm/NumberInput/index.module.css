@@ -63,8 +63,16 @@
 @media (max-width: 600px) {
   .numberField {
     width: 55px;
+    padding-left: 15px;
+  }
+  .numberFieldError {
+    width: 55px;
+    padding-left: 15px;
   }
   .numberField:last-child {
-    width: 70px;
+    width: 60px;
+  }
+  .numberFieldError:last-child {
+    width: 60px;
   }
 }
