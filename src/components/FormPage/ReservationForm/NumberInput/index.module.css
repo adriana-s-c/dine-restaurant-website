@@ -1,0 +1,70 @@
+.numberField {
+  width: 56px;
+  height: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #111111;
+  border-radius: 0;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #c6c6c6;
+  border-width: 1px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  caret-color: #9e7f66;
+}
+
+.numberField:focus {
+  outline: none;
+}
+
+.numberFieldError {
+  width: 56px;
+  height: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #b54949;
+  border-radius: 0;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #b54949;
+  border-width: 1px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  caret-color: #b54949;
+}
+
+.numberFieldError:focus {
+  outline: none;
+}
+
+.numberFieldError::placeholder {
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  color: #b54949;
+}
+
+.numberField:last-child {
+  width: 81px;
+}
+
+.numberFieldError:last-child {
+  width: 81px;
+}
+
+@media (max-width: 600px) {
+  .numberField {
+    width: 55px;
+  }
+  .numberField:last-child {
+    width: 70px;
+  }
+}

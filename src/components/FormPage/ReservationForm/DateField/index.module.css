@@ -1,0 +1,57 @@
+.fieldBox {
+  width: 444px;
+  height: 43px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  width: 90px;
+  height: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #111111;
+  margin-top: 9px;
+}
+
+.labelError {
+  width: 90px;
+  height: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #b54949;
+  margin-top: 9px;
+}
+
+.errorMessage {
+  color: #b54949;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 9px;
+  letter-spacing: -0.125px;
+}
+
+.numberInputsBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 289px;
+}
+
+@media (max-width: 600px) {
+  .fieldBox {
+    width: 263px;
+    height: 79px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .numberInputsBox {
+    width: 263px;
+  }
+}
