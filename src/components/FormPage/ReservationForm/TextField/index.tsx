@@ -34,6 +34,7 @@ export function TextField({ touched, errors, textFieldName }: TextFieldProps) {
       : errors.email && touched.email;
 
   const validation = textFieldName === "name" ? validateName : validateEmail;
+  const errorMessage = textFieldName === "name" ? errors.name : errors.email;
 
   return (
     <div className={isError ? styles.textFieldBoxError : styles.textFieldBox}>
@@ -47,7 +48,7 @@ export function TextField({ touched, errors, textFieldName }: TextFieldProps) {
         className={isError ? styles.fieldError : styles.field}
       />
       {isError ? (
-        <div className={styles.errorMessage}>{errors.name}</div>
+        <div className={styles.errorMessage}>{errorMessage}</div>
       ) : null}
     </div>
   );

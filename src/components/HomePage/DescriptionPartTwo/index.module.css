@@ -132,6 +132,25 @@
   }
 }
 
+@media (max-width: 740px) {
+  .box {
+    height: 747px;
+  }
+  .patternLines {
+    left: calc((100vw - 540px) / 2 + 400px);
+    top: 170px;
+  }
+  .picture {
+    width: 500px;
+    height: 320px;
+    left: calc((100% - 500px) / 2);
+    top: 1650px;
+  }
+  .descriptionBox {
+    top: 1600px;
+  }
+}
+
 @media (max-width: 600px) {
   .box {
     background-image: none;

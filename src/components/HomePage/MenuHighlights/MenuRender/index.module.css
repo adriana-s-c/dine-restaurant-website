@@ -67,18 +67,36 @@
 
 @media (max-width: 1120px) {
   .menuBox {
-    position: relative;
+    position: absolute;
     width: 573px;
     height: 386px;
-    left: calc((100vw - 573px) / 2);
-    top: 469px;
+    left: calc((100% - 573px) / 2);
+    top: 2939px;
+  }
+
+  @media (max-width: 740px) {
+    .menuBox {
+      width: 500px;
+      left: calc((100% - 500px) / 2);
+      top: 2850px;
+    }
+    .dishesBox {
+      width: 500px;
+    }
+    .textBox {
+      width: 345px;
+      margin: 0px;
+    }
+    .divider {
+      width: 500px;
+    }
   }
 }
 
 @media (max-width: 600px) {
   .menuBox {
     left: calc((100% - 327px) / 2);
-    top: 371px;
+    top: 2573px;
     width: 327px;
   }
   .dishesBox {

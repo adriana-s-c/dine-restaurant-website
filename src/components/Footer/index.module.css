@@ -71,6 +71,13 @@
   }
 }
 
+@media (max-width: 770px) {
+  .boxContent {
+    width: 500px;
+    left: calc((100% - 500px) / 2);
+  }
+}
+
 @media (max-width: 600px) {
   .box {
     width: 100%;
