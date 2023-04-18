@@ -108,6 +108,21 @@
   }
 }
 
+@media (max-width: 740px) {
+  .box {
+    height: 657px;
+  }
+  .picture {
+    width: 500px;
+    height: 320px;
+    left: calc((100% - 500px) / 2);
+    top: 920px;
+  }
+  .descriptionBox {
+    top: 1290px;
+  }
+}
+
 @media (max-width: 600px) {
   .box {
     background-image: none;

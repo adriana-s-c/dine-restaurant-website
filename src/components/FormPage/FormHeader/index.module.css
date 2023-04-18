@@ -76,6 +76,18 @@
   }
 }
 
+@media (max-width: 720px) {
+  .textBox {
+    width: 530px;
+    height: 180px;
+    left: calc((100% - 530px) / 2);
+  }
+  .text {
+    width: 530px;
+    margin-left: calc((100% - 530px) / 2);
+  }
+}
+
 @media (max-width: 600px) {
   .header {
     background-image: url(../../../images/booking/hero-bg-mobile.jpg);

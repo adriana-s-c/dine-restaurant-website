@@ -20,6 +20,14 @@
   }
 }
 
+@media (max-width: 740px) {
+  .picture {
+    width: 500px;
+    height: 320px;
+    left: 0;
+  }
+}
+
 @media (max-width: 600px) {
   .picture {
     width: 326px;
