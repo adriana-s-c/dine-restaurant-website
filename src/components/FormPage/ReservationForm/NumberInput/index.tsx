@@ -1,5 +1,7 @@
-import { Field } from "formik";
+import { Field, useFormikContext } from "formik";
 import styles from "./index.module.css";
+
+const onlyNumbers = /^[0-9\b]+$/;
 
 type NumberInputProps = {
   numberType: string;
@@ -18,6 +20,8 @@ export function NumberInput({
   touched,
   placeholder,
 }: NumberInputProps) {
+  const formikProps = useFormikContext();
+
   const isError = () => {
     switch (numberType) {
       case "month":
@@ -32,7 +36,6 @@ export function NumberInput({
         return errors.minutes && touched.minutes;
     }
   };
-
   return (
     <Field
       id={numberType}
@@ -42,6 +45,11 @@ export function NumberInput({
       maxLength={inputLength}
       validate={validation}
       inputMode="numeric"
+      onChange={(e: any) => {
+        return e.target.value === "" || onlyNumbers.test(e.target.value)
+          ? formikProps.setFieldValue(numberType, e.target.value)
+          : null;
+      }}
     />
   );
 }

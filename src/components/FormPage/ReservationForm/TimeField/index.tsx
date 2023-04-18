@@ -58,21 +58,24 @@ export function TimeField({ errors, touched }: TimeFieldProps) {
           inputLength={2}
           placeholder="09"
         />
-        <NumberInput
-          errors={errors}
-          touched={touched}
-          numberType="minutes"
-          validation={validateMinutes}
-          inputLength={2}
-          placeholder="00"
-        />
+        <Field
+          as="select"
+          id="minutes"
+          name="minutes"
+          className={styles.select}
+        >
+          <option>00</option>
+          <option>15</option>
+          <option>30</option>
+          <option>45</option>
+        </Field>
         <Field
           as="select"
           id="daytime"
           name="daytime"
           className={styles.select}
         >
-          <option className={styles.option}>AM</option>
+          <option>AM</option>
           <option>PM</option>
         </Field>
       </div>
