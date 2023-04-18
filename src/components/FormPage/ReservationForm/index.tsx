@@ -33,7 +33,7 @@ export function ReservationForm() {
           day: "",
           year: "",
           hour: "",
-          minutes: "",
+          minutes: "00",
           daytime: "AM",
           people: 2,
         }}
