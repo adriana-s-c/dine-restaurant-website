@@ -363,7 +363,7 @@
     margin-bottom: 16px;
   }
   .chosen:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 16px;
   }
   .notChosen {
     width: 326px;
