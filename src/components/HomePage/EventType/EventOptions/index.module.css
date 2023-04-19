@@ -1,0 +1,180 @@
+.box {
+  position: relative;
+  top: 79px;
+  display: flex;
+  flex-direction: row;
+  width: 313px;
+  height: 108px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.brownLineFirst {
+  width: 95px;
+  height: 1px;
+  background: #9e7f66;
+  margin-top: 28px;
+}
+
+.brownLineSecond {
+  width: 95px;
+  height: 1px;
+  background: #9e7f66;
+  margin-top: 73px;
+}
+
+.brownLineThird {
+  width: 95px;
+  height: 1px;
+  background: #9e7f66;
+  margin-top: 118px;
+}
+
+.dimmedHeadline {
+  color: #4c4c4c;
+  cursor: pointer;
+}
+
+.activeHeadline {
+  cursor: pointer;
+}
+
+.eventTypesBox {
+  margin-left: 32px;
+}
+
+@media (max-width: 1400px) {
+  .box {
+    top: 50px;
+    height: 126px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .box {
+    width: 689px;
+    height: 36px;
+  }
+  .eventTypesBox {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    text-align: center;
+  }
+  .activeHeadline {
+    width: 223px;
+    height: 36px;
+    margin-right: 10px;
+  }
+  .activeHeadline:last-child {
+    margin-right: 0px;
+  }
+  .dimmedHeadline {
+    width: 223px;
+    height: 36px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-right: 10px;
+  }
+  .dimmedHeadline:last-child {
+    margin-right: 0px;
+  }
+  .brownLineFirst {
+    position: absolute;
+    left: 70px;
+    top: 20px;
+  }
+  .brownLineSecond {
+    position: absolute;
+    left: 295px;
+    top: -24px;
+  }
+  .brownLineThird {
+    position: absolute;
+    left: 528px;
+    top: -70px;
+  }
+}
+
+@media (max-width: 740px) {
+  .box {
+    width: 500px;
+    margin-top: 0px;
+    height: 75px;
+  }
+  .eventTypesBox {
+    height: 80px;
+    width: 500px;
+    justify-content: space-around;
+  }
+  .activeHeadline {
+    width: 120px;
+    height: 50px;
+    margin-right: 0;
+  }
+  .dimmedHeadline {
+    width: 120px;
+    height: 50px;
+    margin-right: 0;
+  }
+  .brownLineFirst {
+    top: 45px;
+    left: 33px;
+  }
+  .brownLineSecond {
+    top: 0px;
+    left: 200px;
+  }
+  .brownLineThird {
+    top: -40px;
+    left: 367px;
+  }
+}
+
+@media (max-width: 600px) {
+  .box {
+    width: 326px;
+    height: 116px;
+    top: 0px;
+  }
+  .eventTypesBox {
+    flex-direction: column;
+    width: 326px;
+    height: 116px;
+    align-items: center;
+  }
+  .activeHeadline {
+    width: 326px;
+    height: 28px;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  .activeHeadline:last-child {
+    margin-bottom: 16px;
+  }
+  .dimmedHeadline {
+    width: 326px;
+    height: 28px;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  .brownLineFirst {
+    width: 48px;
+    left: 139px;
+    top: -10px;
+  }
+  .brownLineSecond {
+    width: 48px;
+    left: 139px;
+    top: -10px;
+  }
+  .brownLineThird {
+    width: 48px;
+    left: 139px;
+    top: -10px;
+  }
+}

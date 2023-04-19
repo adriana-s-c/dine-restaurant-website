@@ -3,8 +3,10 @@ import styles from "./index.module.css";
 import patternLines from "../../../images/patterns/pattern-lines.svg";
 import { Link } from "react-router-dom";
 import { PictureRender } from "./PictureRender";
+import { EventOptions } from "./EventOptions";
+import { EventDescription } from "./EventDescription";
 
-const eventTypeData = [
+export const eventTypeData = [
   {
     id: "1",
     type: "Family Gathering",
@@ -22,18 +24,6 @@ const eventTypeData = [
   },
 ];
 
-function setBrownLine(eventType: string) {
-  if (eventType === "Family Gathering") {
-    return styles.brownLineFirst;
-  }
-  if (eventType === "Special Events") {
-    return styles.brownLineSecond;
-  }
-  if (eventType === "Social Events") {
-    return styles.brownLineThird;
-  }
-}
-
 export function EventType() {
   const [eventType, setEventType] = React.useState("Family Gathering");
 
@@ -42,38 +32,13 @@ export function EventType() {
       <div className={styles.eventTypeBox}>
         <PictureRender eventType={eventType} />
         <div className={styles.contentBox}>
-          <div className={styles.tabletRender}>
-            <h2 className={styles.header}>{eventType}</h2>
-            <p className={styles.content}>
-              {eventTypeData.map((event) => {
-                return event.type === eventType ? event.text : null;
-              })}
-            </p>
+          <EventDescription eventType={eventType} />
+          <div className={styles.buttonBox}>
             <Link to="booktable">
               <button className={styles.button}>Book a table</button>
             </Link>
           </div>
-          <div className={styles.typeEventBox}>
-            <div className={setBrownLine(eventType)} />
-            <div className={styles.eventTypes}>
-              {eventTypeData.map((event) => {
-                return (
-                  <p
-                    key={event.id}
-                    className={
-                      eventType === event.type
-                        ? styles.chosen
-                        : styles.notChosen
-                    }
-                    role="button"
-                    onMouseEnter={() => setEventType(event.type)}
-                  >
-                    {event.type}
-                  </p>
-                );
-              })}
-            </div>
-          </div>
+          <EventOptions eventType={eventType} setEventType={setEventType} />
         </div>
       </div>
       <img

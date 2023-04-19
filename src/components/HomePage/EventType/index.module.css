@@ -25,37 +25,19 @@
   top: 3114px;
 }
 
-.header {
-  height: 48px;
-  left: 0%;
-  right: 0%;
-  top: calc(50% - 48px / 2 - 54.5px);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 48px;
-  letter-spacing: -0.5px;
+.buttonBox {
+  position: relative;
+  width: 245px;
+  height: 64px;
+  top: 0px;
+  left: 0px;
   margin-left: 125px;
-}
-
-.content {
-  height: 90px;
-  left: 0%;
-  right: 0%;
-  top: calc(50% - 90px / 2 + 33.5px);
-  margin-left: 125px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 60px;
+  margin-top: 60px;
 }
 
 .button {
   width: 245px;
   height: 64px;
-  left: 830px;
-  top: 3439px;
   font-style: normal;
   font-weight: 600;
   font-size: 17px;
@@ -70,8 +52,6 @@
   line-height: 16px;
   letter-spacing: 2.5px;
   border: none;
-  margin-left: 125px;
-  margin-bottom: 79px;
 }
 
 .button:hover {
@@ -86,52 +66,6 @@
   height: 468px;
 }
 
-.typeEventBox {
-  text-transform: uppercase;
-  width: 313px;
-  height: 108px;
-  display: flex;
-  flex-direction: row;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 28px;
-  letter-spacing: 2.5px;
-}
-
-.brownLineFirst {
-  width: 95px;
-  height: 1px;
-  background: #9e7f66;
-  margin-top: 28px;
-}
-
-.brownLineSecond {
-  width: 95px;
-  height: 1px;
-  background: #9e7f66;
-  margin-top: 73px;
-}
-
-.brownLineThird {
-  width: 95px;
-  height: 1px;
-  background: #9e7f66;
-  margin-top: 118px;
-}
-
-.notChosen {
-  color: #4c4c4c;
-  cursor: pointer;
-}
-
-.chosen {
-  cursor: pointer;
-}
-.eventTypes {
-  margin-left: 32px;
-}
-
 @media (max-width: 1400px) {
   .box {
     height: 820px;
@@ -144,16 +78,6 @@
     top: 160px;
     left: calc((100vw - 1000px) / 2);
   }
-  .tabletRender {
-    height: 295px;
-  }
-  .typeEventBox {
-    height: 130px;
-    margin-top: 40px;
-  }
-  .header {
-    font-size: 40px;
-  }
   .patternLines {
     left: calc((100% - 1000px) / 2 - 40px);
     top: 2944px;
@@ -164,23 +88,20 @@
   .box {
     width: 100vw;
     height: 929px;
+    top: 0px;
   }
   .eventTypeBox {
+    position: absolute;
+    top: 3593px;
     width: 689px;
     height: 781px;
-    top: 120px;
     left: calc((100vw - 689px) / 2);
     flex-direction: column;
   }
-  .typeEventBox {
-    width: 689px;
-    height: 36px;
-  }
-
   .contentBox {
     position: absolute;
     left: calc((100% - 689px) / 2);
-    top: 377px;
+    top: 230px;
     width: 689px;
     height: 364px;
     display: flex;
@@ -192,113 +113,26 @@
     left: calc(((100vh - 669px) / 2) / 2);
     top: 3550px;
   }
-  .eventTypes {
-    display: flex;
-    flex-direction: row;
-    margin: 0px;
-    text-align: center;
-  }
-  .chosen {
-    width: 223px;
-    margin-right: 10px;
-  }
-  .chosen:last-child {
-    margin-right: 0px;
-  }
-  .notChosen {
-    width: 223px;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-    margin-right: 10px;
-  }
-  .notChosen:last-child {
-    margin-right: 0px;
-  }
-  .tabletRender {
-    width: 457px;
-    height: 281px;
-    margin-top: 47px;
-  }
-  .header {
-    margin: 0px;
-    margin-bottom: 19px;
-    text-align: center;
-  }
-  .content {
-    margin: 0px;
-    margin-bottom: 60px;
-    text-align: center;
-  }
-  .brownLineFirst {
-    position: absolute;
-    left: 70px;
-    top: 20px;
-  }
-  .brownLineSecond {
-    position: absolute;
-    left: 295px;
-    top: -24px;
-  }
-  .brownLineThird {
-    position: absolute;
-    left: 528px;
-    top: -70px;
-  }
-  .button {
-    margin: 0px;
-    margin-left: calc((100% - 245px) / 2);
+  .buttonBox {
+    margin: 0;
+    top: 300px;
   }
 }
 
 @media (max-width: 740px) {
-  .contentBox {
-    top: 350px;
-    height: 400px;
-  }
   .eventTypeBox {
     width: 500px;
     left: calc((100% - 500px) / 2);
+    top: 3500px;
   }
   .contentBox {
     width: 500px;
     left: calc((100% - 500px) / 2);
-  }
-  .typeEventBox {
-    width: 500px;
   }
   .eventTypes {
     width: 500px;
     height: 50px;
     justify-content: space-around;
-  }
-  .chosen {
-    width: 120px;
-    height: 50px;
-    margin-right: 0;
-  }
-  .notChosen {
-    width: 120px;
-    height: 50px;
-    margin-right: 0;
-  }
-  .brownLineFirst {
-    top: 45px;
-    left: 30px;
-  }
-  .brownLineSecond {
-    top: 0px;
-    left: 200px;
-  }
-  .brownLineThird {
-    top: -40px;
-    left: 370px;
-  }
-  .typeEventBox {
-    margin-top: 0px;
-    height: 75px;
-  }
-  .eventTypes {
-    height: 80px;
   }
   .patternLines {
     top: 3479px;
@@ -315,7 +149,7 @@
     width: 327px;
     height: 899px;
     left: calc((100% - 327px) / 2);
-    top: 90px;
+    top: 4015px;
   }
   .contentBox {
     width: 327px;
@@ -326,64 +160,7 @@
   .patternLines {
     display: none;
   }
-  .eventTypes {
-    flex-direction: column;
-    width: 326px;
-    height: 116px;
-    align-items: center;
-  }
-  .typeEventBox {
-    width: 326px;
-    height: 116px;
-    left: 24px;
-    top: 4451px;
-  }
-  .header {
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -0.4px;
-    width: 327px;
-  }
-  .content {
-    font-size: 16px;
-    line-height: 26px;
-    height: 104px;
-    width: 327px;
-    margin-bottom: 27px;
-  }
-  .tabletRender {
-    width: 327px;
-    height: 262px;
-    left: calc((100% - 327px) / 2);
-  }
-  .chosen {
-    width: 326px;
-    height: 28px;
-    margin: 0;
-    margin-bottom: 16px;
-  }
-  .chosen:last-child {
-    margin-bottom: 16px;
-  }
-  .notChosen {
-    width: 326px;
-    height: 28px;
-    margin: 0;
-    margin-bottom: 16px;
-  }
-  .brownLineFirst {
-    width: 48px;
-    left: 139px;
-    top: 20px;
-  }
-  .brownLineSecond {
-    width: 48px;
-    left: 139px;
-    top: 20px;
-  }
-  .brownLineThird {
-    width: 48px;
-    left: 139px;
-    top: 25px;
+  .buttonBox {
+    top: 262px;
   }
 }
