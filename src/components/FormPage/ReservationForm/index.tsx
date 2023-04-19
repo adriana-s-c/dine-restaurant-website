@@ -1,11 +1,12 @@
 import * as React from "react";
-import { Formik, Form, Field } from "formik";
+import { Formik, Form } from "formik";
 import styles from "./index.module.css";
 import { Counter } from "./Counter";
 import { DataContext } from "../../../context";
 import { TextField } from "./TextField";
 import { DateField } from "./DateField";
 import { TimeField } from "./TimeField";
+import { Persist } from "formik-persist";
 
 interface Values {
   name: string;
@@ -61,6 +62,7 @@ export function ReservationForm() {
             >
               MAKE RESERVATION
             </button>
+            <Persist name="reservation-form" />
           </Form>
         )}
       </Formik>
