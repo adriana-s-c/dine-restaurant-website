@@ -89,6 +89,13 @@
   margin: 0;
 }
 
+@media (max-width: 1400px) {
+  .box {
+    left: calc((100vw - 540px + 345px) / 2);
+    top: 485px;
+  }
+}
+
 @media (max-width: 1120px) {
   .box {
     left: calc((100% - 540px) / 2);
