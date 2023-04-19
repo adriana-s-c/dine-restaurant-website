@@ -7,13 +7,13 @@
   background-repeat: no-repeat;
 }
 
-.headerDishImg {
-  height: 820px;
+.logo {
+  width: 103px;
+  height: 40px;
 }
 
-.websiteName {
-  color: #ffffff;
-  position: absolute;
+.headerDishImg {
+  height: 820px;
 }
 
 .box {
@@ -94,7 +94,8 @@
     top: 394px;
     left: calc((100% - 689px) / 2);
   }
-  .websiteName {
+  .logo {
+    position: relative;
     left: calc((100% - 103px) / 2);
     top: 0px;
   }

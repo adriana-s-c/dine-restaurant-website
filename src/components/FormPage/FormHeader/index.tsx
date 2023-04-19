@@ -5,9 +5,11 @@ import { Link } from "react-router-dom";
 export function FormHeader() {
   return (
     <div className={styles.header}>
-      <Link to="/">
-        <img src={DineLogo} alt="Dine Logo" className={styles.websiteName} />
-      </Link>
+      <div className={styles.logo}>
+        <Link to="/">
+          <img src={DineLogo} alt="Dine Logo" />
+        </Link>
+      </div>
       <div className={styles.textBox}>
         <h2 className={styles.textHeader}>Reservations</h2>
         <p className={styles.text}>

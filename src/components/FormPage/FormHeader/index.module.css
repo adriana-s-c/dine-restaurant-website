@@ -6,11 +6,11 @@
   background-size: cover;
 }
 
-.websiteName {
+.logo {
   position: relative;
   width: 103px;
   height: 40px;
-  left: 167px;
+  left: 165px;
   top: 65px;
 }
 
@@ -65,7 +65,7 @@
     top: 166px;
     text-align: center;
   }
-  .websiteName {
+  .logo {
     left: 100px;
   }
   .text {
@@ -92,12 +92,10 @@
   .header {
     background-image: url(../../../images/booking/hero-bg-mobile.jpg);
   }
-  .websiteName {
-    width: 82px;
-    height: 32px;
+  .logo {
     top: 56px;
     margin-bottom: 44px;
-    left: calc((100% - 82px) / 2);
+    left: calc((100% - 103px) / 2);
   }
   .textBox {
     height: 240px;
