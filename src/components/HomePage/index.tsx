@@ -1,5 +1,4 @@
-import { DescriptionPartOne } from "./DescriptionPartOne";
-import { DescriptionPartTwo } from "./DescriptionPartTwo";
+import { Description } from "./Description/";
 import { EventType } from "./EventType";
 import { Header } from "./Header";
 import { MenuHighlights } from "./MenuHighlights";
@@ -8,8 +7,7 @@ export function HomePage() {
   return (
     <div>
       <Header />
-      <DescriptionPartOne />
-      <DescriptionPartTwo />
+      <Description />
       <MenuHighlights />
       <EventType />
       <ReservationComponent />
