@@ -21,7 +21,7 @@
   position: absolute;
   width: 160px;
   height: 76px;
-  left: calc((100% - 1100px) / 2 - 40px);
+  left: calc((100% - 1100px) / 3);
   top: 3114px;
 }
 
@@ -79,7 +79,6 @@
     left: calc((100vw - 1000px) / 2);
   }
   .patternLines {
-    left: calc((100% - 1000px) / 2 - 40px);
     top: 2944px;
   }
 }
@@ -110,7 +109,7 @@
   }
   .patternLines {
     position: absolute;
-    left: calc(((100vh - 669px) / 2) / 2);
+    left: calc((100vw - 669px) / 3);
     top: 3550px;
   }
   .buttonBox {
@@ -136,6 +135,7 @@
   }
   .patternLines {
     top: 3479px;
+    left: calc((100vw - 573px) / 3);
   }
 }
 

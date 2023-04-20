@@ -1,0 +1,261 @@
+.box {
+  width: 100%;
+  height: 720px;
+  left: 895px;
+  top: 1070px;
+  background-image: url(../../../../images/patterns/pattern-curve-top-right.svg);
+  background-repeat: no-repeat;
+  background-position: 0px 101px;
+}
+
+.boxLocally {
+  width: 100%;
+  height: 720px;
+  right: 895px;
+  background-image: url(../../../../images/patterns/pattern-curve-top-left.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.picture {
+  position: absolute;
+  width: 540px;
+  height: 720px;
+  left: 165px;
+  top: 750px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.pictureLocally {
+  position: absolute;
+  width: 540px;
+  height: 720px;
+  top: 1591px;
+  right: 165px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.descriptionBox {
+  position: absolute;
+  width: 445px;
+  height: 275px;
+  left: 799px;
+  top: 995px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.descriptionBoxLocally {
+  position: absolute;
+  width: 445px;
+  height: 275px;
+  right: 799px;
+  top: 1780px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.divideIcon {
+  height: 7px;
+  width: 71px;
+  left: 799px;
+  top: 995px;
+  border-radius: 0px;
+  margin-bottom: 55px;
+}
+
+.header {
+  width: 390px;
+  height: 96px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: #242b37;
+  margin-bottom: 27px;
+}
+
+.content {
+  width: 445px;
+  height: 90px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #242b37;
+  margin: 0px;
+}
+
+@media (max-width: 1400px) {
+  .box {
+    height: 620px;
+    background-position: left;
+  }
+  .boxLocally {
+    height: 620px;
+  }
+  .picture {
+    width: 440px;
+    height: 620px;
+  }
+  .pictureLocally {
+    top: 1491px;
+    width: 440px;
+    height: 620px;
+  }
+  .descriptionBox {
+    width: 350px;
+    height: 300px;
+    left: calc((100vw / 2) + 100px);
+  }
+  .descriptionBoxLocally {
+    top: 1620px;
+    width: 350px;
+    height: 300px;
+    right: calc((100vw / 2) + 100px);
+  }
+  .header {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .picture {
+    width: 400px;
+    height: 580px;
+  }
+  .pictureLocally {
+    width: 400px;
+    height: 580px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .box {
+    height: 773px;
+    display: flex;
+    flex-direction: column;
+    background-position: calc((100% - (100vw / 2))) 101px;
+  }
+  .boxLocally {
+    height: 713px;
+    display: flex;
+    flex-direction: column;
+    background-position: calc(100vw / 2) bottom;
+  }
+  .picture {
+    width: 573px;
+    height: 360px;
+    top: 896px;
+    left: calc((100% - 573px) / 2);
+  }
+  .pictureLocally {
+    width: 573px;
+    height: 360px;
+    top: 1700px;
+    left: calc((100% - 573px) / 2);
+  }
+  .descriptionBox {
+    width: 457px;
+    height: 259px;
+    top: 1312px;
+    left: calc((100% - 457px) / 2);
+    text-align: center;
+    align-items: center;
+  }
+  .descriptionBoxLocally {
+    width: 457px;
+    height: 259px;
+    top: 2112px;
+    left: calc((100% - 457px) / 2);
+    text-align: center;
+    align-items: center;
+  }
+  .divideIcon {
+    align-self: center;
+    margin-bottom: 39px;
+  }
+  .header {
+    font-size: 48px;
+  }
+  .content {
+    margin: 0;
+  }
+}
+
+@media (max-width: 740px) {
+  .box {
+    height: 721px;
+    background-position-y: calc((100vw / 2)) 101px;
+  }
+  .boxLocally {
+    background-position: calc((100vw / 2)) bottom;
+  }
+  .picture {
+    width: 500px;
+    height: 320px;
+    left: calc((100% - 500px) / 2);
+    top: 940px;
+  }
+  .pictureLocally {
+    width: 500px;
+    height: 320px;
+    left: calc((100% - 500px) / 2);
+    top: 1700px;
+  }
+  .descriptionBox {
+    top: 1320px;
+  }
+  .descriptionBoxLocally {
+    top: 2070px;
+  }
+}
+
+@media (max-width: 600px) {
+  .box {
+    background-image: none;
+    width: 327px;
+    height: 662px;
+  }
+  .boxLocally {
+    background-image: none;
+    width: 327px;
+    height: 762px;
+  }
+  .descriptionBox {
+    width: 327px;
+    height: 214px;
+    left: calc((100% - 327px) / 2);
+    top: 1150px;
+  }
+  .picture {
+    width: 327px;
+    height: 400px;
+    left: calc((100% - 327px) / 2);
+    top: 700px;
+  }
+  .pictureLocally {
+    width: 327px;
+    height: 400px;
+    left: calc((100% - 327px) / 2);
+    top: 1450px;
+  }
+  .header {
+    height: 80px;
+    width: 238px;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+    margin-bottom: 13px;
+  }
+  .content {
+    font-size: 16px;
+    line-height: 26px;
+    height: 78px;
+    width: 327px;
+  }
+  .descriptionBoxLocally {
+    top: 1890px;
+  }
+}

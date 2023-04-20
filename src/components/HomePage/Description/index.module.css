@@ -1,0 +1,24 @@
+.patternLines {
+  position: absolute;
+  width: 160px;
+  height: 76px;
+  right: 51px;
+  top: 1883px;
+}
+@media (max-width: 1120px) {
+  .patternLines {
+    right: calc((100% - 573px) / 3);
+  }
+}
+
+@media (max-width: 740px) {
+  .patternLines {
+    top: 1823px;
+  }
+}
+
+@media (max-width: 600px) {
+  .patternLines {
+    display: none;
+  }
+}
