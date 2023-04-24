@@ -229,6 +229,12 @@
     left: calc((100% - 327px) / 2);
     top: 1150px;
   }
+  .descriptionBoxLocally {
+    width: 327px;
+    height: 214px;
+    left: calc((100% - 327px) / 2);
+    top: 1150px;
+  }
   .picture {
     width: 327px;
     height: 400px;
