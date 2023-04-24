@@ -1,3 +1,9 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 59px;
+}
+
 .counterBox {
   display: flex;
   flex-direction: row;
@@ -56,11 +62,6 @@
   line-height: 24px;
   letter-spacing: -0.25px;
   color: #b54949;
-}
-
-.counterBoxWithErrorMessage {
-  display: flex;
-  flex-direction: column;
 }
 
 .errorMessage {

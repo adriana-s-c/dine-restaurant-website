@@ -1,9 +1,5 @@
 .textFieldBox {
   width: 444px;
-  height: 43px;
-}
-
-.textFieldBoxError {
   height: 64px;
 }
 
@@ -31,7 +27,7 @@
 }
 
 .fieldError {
-  height: 29px;
+  height: 44px;
   box-sizing: border-box;
   width: 100%;
   font-style: normal;
@@ -73,10 +69,12 @@
 @media (max-width: 600px) {
   .textFieldBox {
     width: 262px;
-    height: 43px;
+    height: 63px;
   }
-  .textFieldBoxError {
-    width: 262px;
-    height: 50px;
+  .field {
+    height: 44px;
+  }
+  .fieldError {
+    height: 44px;
   }
 }

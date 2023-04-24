@@ -37,7 +37,7 @@ export function TextField({ touched, errors, textFieldName }: TextFieldProps) {
   const errorMessage = textFieldName === "name" ? errors.name : errors.email;
 
   return (
-    <div className={isError ? styles.textFieldBoxError : styles.textFieldBox}>
+    <div className={styles.textFieldBox}>
       <Field
         id={textFieldName}
         name={textFieldName}

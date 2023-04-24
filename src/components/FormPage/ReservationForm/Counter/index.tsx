@@ -12,7 +12,7 @@ export function Counter({ people, setPeople }: CounterProps) {
   const error = people >= 15;
 
   return (
-    <div className={styles.counterBoxWithErrorMessage}>
+    <div className={styles.box}>
       <div className={error ? styles.counterBoxError : styles.counterBox}>
         <img
           src={minus}
