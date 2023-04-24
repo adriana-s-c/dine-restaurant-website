@@ -9,12 +9,18 @@
   color: #ffffff;
 }
 
-.button {
+.buttonBox {
   position: absolute;
   width: 245px;
   height: 64px;
   right: calc(((100% - 615px) / 2) / 2);
   margin-top: 88px;
+}
+
+.button {
+  position: absolute;
+  width: 245px;
+  height: 64px;
   font-style: normal;
   font-weight: 600;
   font-size: 17px;
@@ -56,9 +62,6 @@
   .header {
     font-size: 40px;
   }
-  .button {
-    left: 800px;
-  }
 }
 
 @media (max-width: 1120px) {
@@ -66,16 +69,16 @@
     width: 100%;
     height: 272px;
   }
+  .buttonBox {
+    position: relative;
+    left: calc((100vw - 245px) / 2);
+    top: 72px;
+  }
   .header {
     width: 510px;
     margin-top: 72px;
     left: calc((100% - 510px) / 2);
     text-align: center;
-  }
-  .button {
-    position: relative;
-    left: calc((100vw - 245px) / 2);
-    top: 72px;
   }
 }
 
@@ -89,7 +92,7 @@
     width: 327px;
     letter-spacing: -0.4px;
   }
-  .button {
+  .buttonBox {
     position: relative;
     top: 100px;
     left: calc((100vw - 245px) / 2);

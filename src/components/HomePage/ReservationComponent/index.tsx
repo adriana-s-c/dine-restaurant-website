@@ -5,9 +5,11 @@ export function ReservationComponent() {
   return (
     <div className={styles.box}>
       <h2 className={styles.header}>Ready to make a reservation?</h2>
-      <Link to="booktable">
-        <button className={styles.button}>Book a table</button>
-      </Link>
+      <div className={styles.buttonBox}>
+        <Link to="booktable">
+          <button className={styles.button}>Book a table</button>
+        </Link>
+      </div>
     </div>
   );
 }

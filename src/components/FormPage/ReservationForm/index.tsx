@@ -8,18 +8,6 @@ import { DateField } from "./DateField";
 import { TimeField } from "./TimeField";
 import { Persist } from "formik-persist";
 
-interface Values {
-  name: string;
-  email: string;
-  month: number;
-  day: number;
-  year: number;
-  hour: number;
-  minutes: number;
-  daytime: string;
-  people: number;
-}
-
 export function ReservationForm() {
   const [people, setPeople] = React.useState(2);
   const { setData } = React.useContext(DataContext);
