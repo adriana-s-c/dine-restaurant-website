@@ -12,16 +12,6 @@ function validateHour(value: number) {
   }
   return error;
 }
-function validateMinutes(value: number) {
-  let error;
-  if (!value) {
-    error = "This field is incomplete";
-  }
-  if (value > 59) {
-    error = "Minutes number is too high";
-  }
-  return error;
-}
 
 type TimeFieldProps = {
   errors: any;
@@ -31,15 +21,14 @@ type TimeFieldProps = {
 export function TimeField({ errors, touched }: TimeFieldProps) {
   return (
     <div className={styles.fieldBox}>
-      <div className={styles.errorMessageBox}>
-        <label
-          htmlFor="time"
-          className={
-            (errors.hour && touched.hour) || (errors.minutes && touched.minutes)
-              ? styles.labelError
-              : styles.label
-          }
-        >
+      <div
+        className={
+          (errors.hour && touched.hour) || (errors.minutes && touched.minutes)
+            ? styles.labelBoxError
+            : styles.labelBox
+        }
+      >
+        <label htmlFor="time" className={styles.label}>
           Pick a time
         </label>
         {(errors.hour && touched.hour) ||

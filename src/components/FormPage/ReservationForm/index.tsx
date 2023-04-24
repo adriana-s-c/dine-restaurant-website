@@ -44,7 +44,7 @@ export function ReservationForm() {
           setData(values);
         }}
       >
-        {({ errors, touched }) => (
+        {({ errors, touched, isSubmitting }) => (
           <Form className={styles.formContent}>
             <TextField errors={errors} touched={touched} textFieldName="name" />
             <TextField
@@ -58,11 +58,11 @@ export function ReservationForm() {
             <button
               type="submit"
               className={styles.button}
-              disabled={people > 14}
+              disabled={people > 14 || isSubmitting === true}
             >
               MAKE RESERVATION
             </button>
-            <Persist name="reservation-form" />
+            {/* <Persist name="reservation-form" /> */}
           </Form>
         )}
       </Formik>

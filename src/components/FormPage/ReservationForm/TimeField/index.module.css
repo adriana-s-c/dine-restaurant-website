@@ -7,6 +7,26 @@
   justify-content: space-between;
 }
 
+.label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 9px;
+}
+
+.labelBox {
+  width: 92px;
+  height: 38px;
+  color: #111111;
+}
+
+.labelBoxError {
+  width: 92px;
+  height: 38px;
+  color: #b54949;
+}
+
 .timeInputsBox {
   display: flex;
   flex-direction: row;
@@ -15,13 +35,10 @@
 }
 
 .label {
-  width: 90px;
-  height: 28px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: #111111;
   margin-top: 9px;
 }
 
@@ -80,7 +97,7 @@
 @media (max-width: 600px) {
   .fieldBox {
     width: 263px;
-    height: 79px;
+    height: 85px;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -91,5 +108,8 @@
     width: 88px;
     height: 44px;
     align-self: flex-end;
+  }
+  .errorMessage {
+    width: 120px;
   }
 }
